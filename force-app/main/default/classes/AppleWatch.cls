@@ -9,7 +9,7 @@ Public with sharing Class AppleWatch{
       //t.Activity_Custom_field_3__c = true;
         insert t;
      /*Comment to test smart resolved in 2nd gen*/
-     /*Comment MOD for validation*/
+     /*Comment MOD for validation resolved manually*/
    }
   }
  }
