@@ -200,4 +200,8 @@
         <name>Salesforce_Chatterbox</name>
         <type>ConnectedApp</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>standard__FlowsApp</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>

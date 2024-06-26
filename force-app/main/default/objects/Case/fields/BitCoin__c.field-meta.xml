@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BitCoin__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Rebase test -  value in Dev1 to generate conflict</description>
+    <externalId>false</externalId>
+    <label>BitCoin</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

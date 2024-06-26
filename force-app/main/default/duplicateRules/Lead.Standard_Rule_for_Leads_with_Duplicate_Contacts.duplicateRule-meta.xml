@@ -11,6 +11,10 @@
         <objectMapping>
             <inputObject>Lead</inputObject>
             <mappingFields>
+                <inputField>FirstName</inputField>
+                <outputField>FirstName</outputField>
+            </mappingFields>
+            <mappingFields>
                 <inputField>LastName</inputField>
                 <outputField>LastName</outputField>
             </mappingFields>
@@ -21,10 +25,6 @@
             <mappingFields>
                 <inputField>Email</inputField>
                 <outputField>Email</outputField>
-            </mappingFields>
-            <mappingFields>
-                <inputField>FirstName</inputField>
-                <outputField>FirstName</outputField>
             </mappingFields>
             <mappingFields>
                 <inputField>City</inputField>

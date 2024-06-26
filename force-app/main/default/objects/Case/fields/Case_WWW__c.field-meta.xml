@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_WWW__c</fullName>
+    <externalId>false</externalId>
+    <label>Case WWW</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>January</fullName>
+                <default>false</default>
+                <label>January</label>
+            </value>
+            <value>
+                <fullName>February</fullName>
+                <default>false</default>
+                <label>February</label>
+            </value>
+            <value>
+                <fullName>March</fullName>
+                <default>false</default>
+                <label>March</label>
+            </value>
+            <value>
+                <fullName>AprilMOD</fullName>
+                <default>false</default>
+                <label>April</label>
+            </value>
+            <value>
+                <fullName>October</fullName>
+                <default>false</default>
+                <label>October</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

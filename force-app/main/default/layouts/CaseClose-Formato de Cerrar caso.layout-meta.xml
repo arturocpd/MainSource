@@ -18,6 +18,14 @@
                 <behavior>Edit</behavior>
                 <field>Comments</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Source_test_1__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>format_test__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>

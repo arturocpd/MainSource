@@ -55,6 +55,7 @@
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
     <label>Copado Release Manager</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>

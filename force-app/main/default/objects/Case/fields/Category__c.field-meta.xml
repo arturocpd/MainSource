@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account</fullName>
+                <default>false</default>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>Bevtrack</fullName>
+                <default>false</default>
+                <label>Bevtrack</label>
+            </value>
+            <value>
+                <fullName>CCE document</fullName>
+                <default>false</default>
+                <label>CCE document</label>
+            </value>
+            <value>
+                <fullName>FR - Consumer/Others</fullName>
+                <default>false</default>
+                <label>FR - Consumer/Others</label>
+            </value>
+            <value>
+                <fullName>Contract Changes</fullName>
+                <default>false</default>
+                <label>Contract Changes</label>
+            </value>
+            <value>
+                <fullName>FR - Customer PAV</fullName>
+                <default>false</default>
+                <label>FR - Customer PAV</label>
+            </value>
+            <value>
+                <fullName>FR - Customer Powerade Service</fullName>
+                <default>false</default>
+                <label>FR - Customer Powerade Service</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>Delivery Recovery Requests</fullName>
+                <default>false</default>
+                <label>Delivery Recovery Requests</label>
+            </value>
+            <value>
+                <fullName>EDI Customer</fullName>
+                <default>false</default>
+                <label>EDI Customer</label>
+            </value>
+            <value>
+                <fullName>Employee Relations</fullName>
+                <default>false</default>
+                <label>Employee Relations</label>
+            </value>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Escalation</fullName>
+                <default>false</default>
+                <label>Escalation</label>
+            </value>
+            <value>
+                <fullName>External (NSC)</fullName>
+                <default>false</default>
+                <label>External (NSC)</label>
+            </value>
+            <value>
+                <fullName>External (SC)</fullName>
+                <default>false</default>
+                <label>External (SC)</label>
+            </value>
+            <value>
+                <fullName>External Customer</fullName>
+                <default>false</default>
+                <label>External Customer</label>
+            </value>
+            <value>
+                <fullName>Files Management</fullName>
+                <default>false</default>
+                <label>Files Management</label>
+            </value>
+            <value>
+                <fullName>Flexible Working Application</fullName>
+                <default>false</default>
+                <label>Flexible Working Application</label>
+            </value>
+            <value>
+                <fullName>Free Products</fullName>
+                <default>false</default>
+                <label>Free Products</label>
+            </value>
+            <value>
+                <fullName>Full Service Vending</fullName>
+                <default>false</default>
+                <label>Full Service Vending</label>
+            </value>
+            <value>
+                <fullName>HR Information Systems</fullName>
+                <default>false</default>
+                <label>HR Information Systems</label>
+            </value>
+            <value>
+                <fullName>Internal (NSC)</fullName>
+                <default>false</default>
+                <label>Internal (NSC)</label>
+            </value>
+            <value>
+                <fullName>Internal (SC)</fullName>
+                <default>false</default>
+                <label>Internal (SC)</label>
+            </value>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <label>Invoice</label>
+            </value>
+            <value>
+                <fullName>Learning and Development</fullName>
+                <default>false</default>
+                <label>Learning and Development</label>
+            </value>
+            <value>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+                <label>Logistics</label>
+            </value>
+            <value>
+                <fullName>Master Data</fullName>
+                <default>false</default>
+                <label>Master Data</label>
+            </value>
+            <value>
+                <fullName>Merchandiser</fullName>
+                <default>false</default>
+                <label>Merchandiser</label>
+            </value>
+            <value>
+                <fullName>Misdirects</fullName>
+                <default>false</default>
+                <label>Misdirects</label>
+            </value>
+            <value>
+                <fullName>New Hire (External Recruitment)</fullName>
+                <default>false</default>
+                <label>New Hire (External Recruitment)</label>
+            </value>
+            <value>
+                <fullName>Occupational Health and Absence</fullName>
+                <default>false</default>
+                <label>Occupational Health and Absence</label>
+            </value>
+            <value>
+                <fullName>Order</fullName>
+                <default>false</default>
+                <label>Order</label>
+            </value>
+            <value>
+                <fullName>Organisational Management</fullName>
+                <default>false</default>
+                <label>Organisational Management</label>
+            </value>
+            <value>
+                <fullName>Payroll</fullName>
+                <default>false</default>
+                <label>Payroll</label>
+            </value>
+            <value>
+                <fullName>Personnel Administration</fullName>
+                <default>false</default>
+                <label>Personnel Administration</label>
+            </value>
+            <value>
+                <fullName>Portal</fullName>
+                <default>false</default>
+                <label>Portal</label>
+            </value>
+            <value>
+                <fullName>POS</fullName>
+                <default>false</default>
+                <label>POS</label>
+            </value>
+            <value>
+                <fullName>Product Quality</fullName>
+                <default>false</default>
+                <label>Product Quality</label>
+            </value>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>Recruitment Support</fullName>
+                <default>false</default>
+                <label>Recruitment Support</label>
+            </value>
+            <value>
+                <fullName>Rewards - Benefits</fullName>
+                <default>false</default>
+                <label>Rewards - Benefits</label>
+            </value>
+            <value>
+                <fullName>Rewards - Compensation</fullName>
+                <default>false</default>
+                <label>Rewards - Compensation</label>
+            </value>
+            <value>
+                <fullName>Sales Rep</fullName>
+                <default>false</default>
+                <label>Sales Rep</label>
+            </value>
+            <value>
+                <fullName>Sample Orders</fullName>
+                <default>false</default>
+                <label>Sample Orders</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Separation</fullName>
+                <default>false</default>
+                <label>Separation</label>
+            </value>
+            <value>
+                <fullName>SOC</fullName>
+                <default>false</default>
+                <label>SOC</label>
+            </value>
+            <value>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+                <label>Sponsoring</label>
+            </value>
+            <value>
+                <fullName>Talent/Performance Management</fullName>
+                <default>false</default>
+                <label>Talent/Performance Management</label>
+            </value>
+            <value>
+                <fullName>Technical</fullName>
+                <default>false</default>
+                <label>Technical</label>
+            </value>
+            <value>
+                <fullName>Time clocking</fullName>
+                <default>false</default>
+                <label>Time clocking</label>
+            </value>
+            <value>
+                <fullName>Time non clocking</fullName>
+                <default>false</default>
+                <label>Time non clocking</label>
+            </value>
+            <value>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+                <label>Wholesaler</label>
+            </value>
+            <value>
+                <fullName>FR - Wholesaler - Customer Portal</fullName>
+                <default>false</default>
+                <label>FR - Wholesaler - Customer Portal</label>
+            </value>
+            <value>
+                <fullName>Rushorder</fullName>
+                <default>false</default>
+                <label>Rushorder</label>
+            </value>
+            <value>
+                <fullName>Outlet Master Data</fullName>
+                <default>false</default>
+                <label>Outlet Master Data</label>
+            </value>
+            <value>
+                <fullName>Consumer Response</fullName>
+                <default>false</default>
+                <label>Consumer Response</label>
+            </value>
+            <value>
+                <fullName>Office Support</fullName>
+                <default>false</default>
+                <label>Office Support</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Finance info/document sent</fullName>
+                <default>false</default>
+                <label>Finance info/document sent</label>
+            </value>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Collection</fullName>
+                <default>false</default>
+                <label>Collection</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Dispute</fullName>
+                <default>false</default>
+                <label>Dispute</label>
+            </value>
+            <value>
+                <fullName>Cash application</fullName>
+                <default>false</default>
+                <label>Cash application</label>
+            </value>
+            <value>
+                <fullName>PTP</fullName>
+                <default>false</default>
+                <label>PTP</label>
+            </value>
+            <value>
+                <fullName>Dispute RS</fullName>
+                <default>false</default>
+                <label>Dispute RS</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>CMA</fullName>
+                <default>false</default>
+                <label>CMA</label>
+            </value>
+            <value>
+                <fullName>KBS</fullName>
+                <default>false</default>
+                <label>KBS</label>
+            </value>
+            <value>
+                <fullName>HORECA</fullName>
+                <default>false</default>
+                <label>HORECA</label>
+            </value>
+            <value>
+                <fullName>HOME</fullName>
+                <default>false</default>
+                <label>HOME</label>
+            </value>
+            <value>
+                <fullName>Inbound</fullName>
+                <default>false</default>
+                <label>Inbound</label>
+            </value>
+            <value>
+                <fullName>Change not account specific</fullName>
+                <default>false</default>
+                <label>Change not account specific</label>
+            </value>
+            <value>
+                <fullName>CMD not account specific</fullName>
+                <default>false</default>
+                <label>CMD not account specific</label>
+            </value>
+            <value>
+                <fullName>Shipments</fullName>
+                <default>false</default>
+                <label>Shipments</label>
+            </value>
+            <value>
+                <fullName>PO</fullName>
+                <default>false</default>
+                <label>PO</label>
+            </value>
+            <value>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+                <label>Campaign</label>
+            </value>
+            <value>
+                <fullName>Customer Portal</fullName>
+                <default>false</default>
+                <label>Customer Portal</label>
+            </value>
+            <value>
+                <fullName>Technical (Tech Call Centre Only)</fullName>
+                <default>false</default>
+                <label>Technical (Tech Call Centre Only)</label>
+            </value>
+            <value>
+                <fullName>Voicemail</fullName>
+                <default>false</default>
+                <label>Voicemail</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Products</fullName>
+                <default>false</default>
+                <label>Products</label>
+            </value>
+            <value>
+                <fullName>Documents</fullName>
+                <default>false</default>
+                <label>Documents</label>
+            </value>
+            <value>
+                <fullName>Remove from Coverage - Equipment Present</fullName>
+                <default>false</default>
+                <label>Remove from Coverage - Equipment Present</label>
+            </value>
+            <value>
+                <fullName>Remove from Coverage - No Equipment Present</fullName>
+                <default>false</default>
+                <label>Remove from Coverage - No Equipment Present</label>
+            </value>
+            <value>
+                <fullName>Change Territory</fullName>
+                <default>false</default>
+                <label>Change Territory</label>
+            </value>
+            <value>
+                <fullName>Environment</fullName>
+                <default>false</default>
+                <label>Environment</label>
+            </value>
+            <value>
+                <fullName>Complains</fullName>
+                <default>false</default>
+                <label>Complains</label>
+            </value>
+            <value>
+                <fullName>Contact</fullName>
+                <default>false</default>
+                <label>Contact</label>
+            </value>
+            <value>
+                <fullName>DSR</fullName>
+                <default>false</default>
+                <label>DSR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

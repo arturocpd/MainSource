@@ -1,80 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- CMC SFDX --></label>
         <name>CMC_SFDX</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Release Manager --></label>
         <name>Copado</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Tests --></label>
         <name>CopadoTests</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Pipeline Manager --></label>
         <name>Copado_Branch_Management</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Pipeline Manager --></label>
         <name>Copado_Branch_Management_Lightning</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Developer --></label>
         <name>Copado_Change_Management</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Developer --></label>
         <name>Copado_Change_Management_Lightning</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Compliance Hub --></label>
         <name>Copado_Compliance_Hub</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Connect --></label>
         <name>Copado_Connect</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Console --></label>
         <name>Copado_Console</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Release Manager --></label>
         <name>Copado_Lightning</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Permissioner --></label>
         <name>Copado_Permissioner</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Plan --></label>
         <name>Copado_Plan</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Plan --></label>
         <name>Copado_Plan_Lightning</name>
     </customApplications>
     <customApplications>
-        <description xsi:nil="true"/>
         <label><!-- Copado Selenium Testing --></label>
         <name>Copado_Selenium_Testing</name>
     </customApplications>
+    <customLabels>
+        <label><!-- Test Bug US --></label>
+        <name>Test_Bug_US</name>
+    </customLabels>
     <customLabels>
         <label><!-- AddApexTests --></label>
         <name>cmcSf__AddApexTests</name>
