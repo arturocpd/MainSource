@@ -8,7 +8,7 @@ Public with sharing Class AppleWatch{
         t.WhatId      = opp.Id;
       //t.Activity_Custom_field_3__c = true;
         insert t;
-     /*Comment to test rollback*/
+     /*Comment to test rollbackconflict in fb*/
      /*Comment Test smart bug validation one more try*/
    }
   }
