@@ -5,10 +5,13 @@
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
     </genAiFunctions>
     <genAiPlugins>
-        <genAiPluginName>SvcCopilotTmpl__GeneralFAQ</genAiPluginName>
+        <genAiPluginName>AR_new_topic</genAiPluginName>
     </genAiPlugins>
     <genAiPlugins>
         <genAiPluginName>Experience_Management</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>SvcCopilotTmpl__GeneralFAQ</genAiPluginName>
     </genAiPlugins>
     <masterLabel>CC Service Agent</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>
