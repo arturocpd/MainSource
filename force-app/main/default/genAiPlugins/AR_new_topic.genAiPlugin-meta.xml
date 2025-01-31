@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>This is a test topic Description</description>
+    <developerName>AR_new_topic</developerName>
+    <genAiFunctions>
+        <functionName>Get_Experience_Details</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>This is the test instruction 1</description>
+        <developerName>instruction_thisisthet0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_thisisthet0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>This is the test instruction 2</description>
+        <developerName>instruction_thisisthet1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_thisisthet1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>AR new topic</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This is the test topic Scope</scope>
+</GenAiPlugin>
