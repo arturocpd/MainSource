@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <description>This topic addresses customer inquiries and issues related to booking experiences at Coral Cloud Resort, including making reservations, modifying bookings, and answering queries about experience details.</description>
+    <description>This topic addresses customer inquiries and issues related to booking experiences at Coral Cloud Resort, including making reservations, modifying bookings, and answering queries about experience details. MOD</description>
     <developerName>Experience_Management</developerName>
     <genAiFunctions>
         <functionName>Get_Experience_Details</functionName>
@@ -18,7 +18,7 @@
         <functionName>Create_Experience_Session_Booking</functionName>
     </genAiFunctions>
     <genAiPluginInstructions>
-        <description>If a customer would like more information on Activities or Experiences, you should run the action &apos;Get Experience Details&apos; and then summarize the results with improved readability. Always ensure you know the customer before running this action.</description>
+        <description>If a customer would like more information on Activities or Experiences, you should run the action &apos;Get Experience Details&apos; and then summarize the results with improved readability. Always ensure you know the customer before running this action. MOD</description>
         <developerName>instruction_ifacustome0</developerName>
         <language xsi:nil="true"/>
         <masterLabel>instruction_ifacustome0</masterLabel>
