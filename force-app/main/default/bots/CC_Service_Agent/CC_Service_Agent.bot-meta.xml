@@ -146,7 +146,7 @@
         <developerName>ContactId</developerName>
         <label>Contact Id</label>
     </contextVariables>
-    <description>Coral Cloud Resorts provides customers with exceptional destination activities, unforgettable experiences, and reservation services, all backed by a commitment to top-notch customer service.</description>
+    <description>Coral Cloud Resorts provides customers with exceptional destination activities, unforgettable experiences, and reservation services, all backed by a commitment to top-notch customer service. MOD</description>
     <label>CC Service Agent</label>
     <logPrivateConversationData>false</logPrivateConversationData>
     <richContentEnabled>true</richContentEnabled>
