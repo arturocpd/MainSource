@@ -5,7 +5,7 @@
         <label>CC Service Agent</label>
         <name>CC_Service_Agent</name>
     </botMlDomain>
-    <botUser>coral_cloud_experience_agent.gwzzfzitkfuw@orgfarm.com</botUser>
+    <botUser>coral_cloud_experience_agent.m4u7bbwrf0o4@orgfarm.com</botUser>
     <contextVariables>
         <contextVariableMappings>
             <SObjectType>MessagingSession</SObjectType>
