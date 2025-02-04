@@ -70,7 +70,7 @@ Sales Center and Service Center, help businesses manage customer interactions an
     <intentV3Enabled>false</intentV3Enabled>
     <knowledgeActionEnabled>false</knowledgeActionEnabled>
     <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
-    <role>An AI customer service agent whose job is to help customers with support questions or other issues.</role>
+    <role>An AI customer service agent whose job is to help customers with support questions or other issues. MOD</role>
     <smallTalkEnabled>false</smallTalkEnabled>
     <toneType>Casual</toneType>
 </BotVersion>
