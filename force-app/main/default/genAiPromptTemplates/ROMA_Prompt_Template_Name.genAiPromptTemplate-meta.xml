@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is a test. (ROMA)</description>
+    <developerName>ROMA_Prompt_Template_Name</developerName>
+    <masterLabel>ROMA Prompt Template Name</masterLabel>
+    <templateVersions>
+        <content>As a sales rep for Organization. Name, check all opportunity records for account: Input.Name in RelatedList.Opportunities. Identify the opportunity with the highest amount. Follow the instructions below.
+Instructions: &apos;&apos;&apos;Express your excitement to discuss and work on closing the deal. Address the email to the most senior contact in RelatedList:Account.Contacts.Records. Use a friendly and enthusiastic tone.&quot;™*
+Now create an email for this opportunity.
+</content>
+        <inputs>
+            <apiName>Source1</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Source1</masterLabel>
+            <referenceName>Input:Source1</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
