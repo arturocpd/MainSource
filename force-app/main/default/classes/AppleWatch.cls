@@ -12,6 +12,7 @@ Public with sharing Class AppleWatch{
      /*Comment Test smart bug validation one more try*/
      /*Additional line in main*/
      /comment in deletemain
+     /*comment in deletefeature
    }
   }
  }
