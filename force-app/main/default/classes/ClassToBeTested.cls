@@ -15,5 +15,6 @@ public class ClassToBeTested {
      public static Integer multiplyNumbers(Integer a, Integer b) {
         Integer multiply = a * b;
         return multiply;
+/*comment in delete feature
     }
 }
