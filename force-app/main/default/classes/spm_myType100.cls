@@ -8,8 +8,7 @@ public with sharing class spm_myType100 {
         }
     }
 
-    /**___CONFLICT_1___ - Dev 1 change**/
-    /**Rollback test test**/
+       /**__Changes in Dev1 for conflict merge test 100**/
 
     public static Account setDefaultBillingAddress(Account a){
         a.billingstreet = 'Basauri, 6'; 
