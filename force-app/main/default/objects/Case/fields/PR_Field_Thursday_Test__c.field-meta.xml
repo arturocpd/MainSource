@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Promotion_test__c</fullName>
+    <fullName>PR_Field_Thursday_Test__c</fullName>
     <defaultValue>false</defaultValue>
-    <label>Promotion test</label>
+    <label>PR Field Thursday Test</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

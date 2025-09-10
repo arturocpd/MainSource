@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Promotion_test__c</fullName>
+    <fullName>Roma_log_test__c</fullName>
     <defaultValue>false</defaultValue>
-    <label>Promotion test</label>
+    <label>Roma log test</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
