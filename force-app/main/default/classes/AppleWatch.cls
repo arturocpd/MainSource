@@ -8,8 +8,7 @@ Public with sharing Class AppleWatch{
         t.WhatId      = opp.Id;
       //t.Activity_Custom_field_3__c = true;
         insert t;
-     /*Comment to test smart resolved in 2nd gen*/
-     /*Comment Test smart bug in 2nd Gen*/
+     /*Comment resolving the conflict*/
    }
   }
  }
