@@ -1,6 +1,6 @@
 {
     "CurrencyIsoCode": "USD",
-    "Description": "Test multiple OS bulk deploy",
+    "Description": "AR bulk test case proceeding",
     "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
     "IsIntegProcdSignatureAvl": false,
     "IsIntegrationProcedure": false,
@@ -12,15 +12,15 @@
     "IsWebCompEnabled": true,
     "Language": "English",
     "MayEdit": true,
-    "Name": "ARCaseUpdate",
-    "OmniProcessElement": "CaseManagement_ComplaintIntake_English_Element_Step1.json",
+    "Name": "AR case proceding",
+    "OmniProcessElement": "CaseProceeding_ServiceRequest_English_Element_Step1.json",
     "OmniProcessType": "OmniScript",
-    "PropertySetConfig": "CaseManagement_ComplaintIntake_English_PropertySetConfig.json",
-    "SubType": "ComplaintIntake",
-    "Type": "CaseManagement",
-    "UniqueName": "CaseManagement_ComplaintIntake_English_4",
+    "PropertySetConfig": "CaseProceeding_ServiceRequest_English_PropertySetConfig.json",
+    "SubType": "ServiceRequest",
+    "Type": "CaseProceeding",
+    "UniqueName": "CaseProceeding_ServiceRequest_English_3",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
-    "VlocityRecordSourceKey": "OmniProcess/CaseManagement/ComplaintIntake/English",
-    "WebComponentKey": "f1e6168d-25f7-69eb-7a3b-fd4af869f502"
+    "VlocityRecordSourceKey": "OmniProcess/CaseProceeding/ServiceRequest/English",
+    "WebComponentKey": "0e72692c-dbc5-58a3-eaaa-e84a59a026ff"
 }
