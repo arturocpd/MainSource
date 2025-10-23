@@ -1,0 +1,54 @@
+{
+    "AuthorName": "ROMA",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "USD",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 2,
+                    "name": "recordId",
+                    "val": "500xx000000bnevAAA"
+                },
+                {
+                    "id": 5,
+                    "name": "stepTitle",
+                    "val": "Custody Item Details"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "PSSJICMGetCaseDetails",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "RecordId": "{recordId}"
+                },
+                "jsonMap": "{\"recordId\":\"{recordId}\",\"stepTitle\":\"{stepTitle}\"}",
+                "resultVar": "[0]['Case']"
+            }
+        }
+    },
+    "Description": "AR bulk parameter test FlexCard",
+    "IsLocked": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsTrackingEnabled": false,
+    "MayEdit": true,
+    "Name": "ROMAAddEvidenceTitleCard",
+    "Namespace": "",
+    "OmniUiCardKey": "ROMAAddEvidenceTitleCard/ROMA/2.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "ROMAAddEvidenceTitleCard.json",
+    "SampleDataSourceResponse": "[{\"Case\":{\"Id\":\"500xx000000bnevAAA\",\"CaseNumber\":\"00001003\"}}]",
+    "StylingConfiguration": "",
+    "UniqueName": "ROMAAddEvidenceTitleCard_ROMA_2",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ROMAAddEvidenceTitleCard"
+}
