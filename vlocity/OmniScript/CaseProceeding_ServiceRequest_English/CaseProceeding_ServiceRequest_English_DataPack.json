@@ -1,6 +1,6 @@
 {
     "CurrencyIsoCode": "USD",
-    "Description": "AR bulk test case proceeding",
+    "Description": "AR bulk parameter test OmniScript",
     "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
     "IsIntegProcdSignatureAvl": false,
     "IsIntegrationProcedure": false,
@@ -18,9 +18,9 @@
     "PropertySetConfig": "CaseProceeding_ServiceRequest_English_PropertySetConfig.json",
     "SubType": "ServiceRequest",
     "Type": "CaseProceeding",
-    "UniqueName": "CaseProceeding_ServiceRequest_English_3",
+    "UniqueName": "CaseProceeding_ServiceRequest_English_4",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
     "VlocityRecordSourceKey": "OmniProcess/CaseProceeding/ServiceRequest/English",
-    "WebComponentKey": "0e72692c-dbc5-58a3-eaaa-e84a59a026ff"
+    "WebComponentKey": "32d49814-34f9-be6e-a22d-85850fbd11f7"
 }
