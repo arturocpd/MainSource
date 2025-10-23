@@ -10,7 +10,6 @@ Public with sharing Class AppleWatch{
         insert t;
      /*Comment to test rollback*/
      /*Comment Test smart bug validation one more try*/
-     /*Additional line in main*/
    }
   }
  }
