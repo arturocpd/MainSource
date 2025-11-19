@@ -7,11 +7,6 @@
         <field>Case.PR_Field_Thursday_Test2__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.PR_Field_Thursday_Test__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
     <loginHours n1:nil="true" />
     <userLicense>Salesforce</userLicense>
     <userPermissions>
