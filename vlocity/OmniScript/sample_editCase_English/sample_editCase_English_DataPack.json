@@ -1,0 +1,33 @@
+{
+    "Description": "AR Local Compiler",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "Sample Edit Case",
+    "OmniProcessElement": [
+        "sample_editCase_English_Element_IPGetCaseDetails.json",
+        "sample_editCase_English_Element_StepCase.json",
+        "sample_editCase_English_Element_CaseNumber.json",
+        "sample_editCase_English_Element_CaseSubject.json",
+        "sample_editCase_English_Element_LineBreak1.json",
+        "sample_editCase_English_Element_CaseOpenDate.json",
+        "sample_editCase_English_Element_CaseStatus.json",
+        "sample_editCase_English_Element_IPSaveCaseDetails.json",
+        "sample_editCase_English_Element_NavigateAction1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "sample_editCase_English_PropertySetConfig.json",
+    "SubType": "editCase",
+    "Type": "sample",
+    "UniqueName": "sample_editCase_English_6",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/sample/editCase/English",
+    "WebComponentKey": "eb57ca79-9247-ade8-4734-f8d0c25b403b"
+}
