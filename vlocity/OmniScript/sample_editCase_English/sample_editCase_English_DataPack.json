@@ -1,5 +1,5 @@
 {
-    "Description": "AR Puppeteer test 2",
+    "Description": "AR Local Compiler",
     "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
     "IsIntegProcdSignatureAvl": false,
     "IsIntegrationProcedure": false,
@@ -25,9 +25,9 @@
     "PropertySetConfig": "sample_editCase_English_PropertySetConfig.json",
     "SubType": "editCase",
     "Type": "sample",
-    "UniqueName": "sample_editCase_English_3",
+    "UniqueName": "sample_editCase_English_6",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
     "VlocityRecordSourceKey": "OmniProcess/sample/editCase/English",
-    "WebComponentKey": "1b7f1632-40e8-0063-26d5-028e331bee8f"
+    "WebComponentKey": "eb57ca79-9247-ade8-4734-f8d0c25b403b"
 }

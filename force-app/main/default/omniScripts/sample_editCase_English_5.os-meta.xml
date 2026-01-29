@@ -2,7 +2,7 @@
 <OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Active version 5 in source</description>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
-    <isActive>false</isActive>
+    <isActive>true</isActive>
     <isIntegrationProcedure>false</isIntegrationProcedure>
     <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
@@ -386,5 +386,5 @@
     <type>sample</type>
     <uniqueName>sample_editCase_English_5</uniqueName>
     <versionNumber>5.0</versionNumber>
-    <webComponentKey>270014a6-57db-8cae-90eb-8e87f75a061c</webComponentKey>
+    <webComponentKey>38402eeb-b620-09da-dea3-6286d7c2d993</webComponentKey>
 </OmniScript>
