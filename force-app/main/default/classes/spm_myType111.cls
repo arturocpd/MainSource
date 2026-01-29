@@ -8,9 +8,8 @@ public with sharing class spm_myType111 {
         }
     }
 
-    /**Dev2 update**/
-    /**Dev2 update2**/
-    /**Dev2 update3**/
+    /**Dev1 Changes**/
+    /**Dev1 Changes #2**/
 
     public static Account setDefaultBillingAddress(Account a){
         a.billingstreet = 'Basauri, 6'; 
