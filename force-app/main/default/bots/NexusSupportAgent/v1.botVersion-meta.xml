@@ -3,8 +3,8 @@
     <fullName>v1</fullName>
     <botDialogs>
         <botSteps>
-            <type>StepControl</type>
             <stepControlAction>CallPlanner</stepControlAction>
+            <type>StepControl</type>
         </botSteps>
         <developerName>Agent_Execution_Placeholder</developerName>
         <label>Agent Execution</label>
@@ -13,13 +13,13 @@
     </botDialogs>
     <botDialogs>
         <botSteps>
-            <type>Navigation</type>
             <botNavigation>
                 <botNavigationLinks>
                     <targetBotDialog>Agent_Execution_Placeholder</targetBotDialog>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
+            <type>Navigation</type>
         </botSteps>
         <developerName>Welcome</developerName>
         <label>Welcome</label>
