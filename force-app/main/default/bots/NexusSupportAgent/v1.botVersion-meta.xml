@@ -3,18 +3,16 @@
     <fullName>v1</fullName>
     <botDialogs>
         <developerName>Agent_Execution_Placeholder</developerName>
-        <label>Agent Execution</label>
-        <showInMenu>false</showInMenu>
         <botSteps>
             <stepControlAction>CallPlanner</stepControlAction>
             <type>StepControl</type>
         </botSteps>
+        <label>Agent Execution</label>
+        <showInMenu>false</showInMenu>
         <type>Standard</type>
     </botDialogs>
     <botDialogs>
         <developerName>Welcome</developerName>
-        <label>Welcome</label>
-        <showInMenu>false</showInMenu>
         <botSteps>
             <botNavigation>
                 <botNavigationLinks>
@@ -23,6 +21,8 @@
                 <type>Redirect</type>
             </botNavigation>
         </botSteps>
+        <label>Welcome</label>
+        <showInMenu>false</showInMenu>
         <type>Standard</type>
     </botDialogs>
     <conversationSystemDialogs>
