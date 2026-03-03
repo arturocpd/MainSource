@@ -2,17 +2,16 @@
 <BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>v1</fullName>
     <botDialogs>
-        <developerName>Agent_Execution_Placeholder</developerName>
         <botSteps>
             <type>StepControl</type>
             <stepControlAction>CallPlanner</stepControlAction>
         </botSteps>
+        <developerName>Agent_Execution_Placeholder</developerName>
         <label>Agent Execution</label>
         <showInMenu>false</showInMenu>
         <type>Standard</type>
     </botDialogs>
     <botDialogs>
-        <developerName>Welcome</developerName>
         <botSteps>
             <type>Navigation</type>
             <botNavigation>
@@ -22,6 +21,7 @@
                 <type>Redirect</type>
             </botNavigation>
         </botSteps>
+        <developerName>Welcome</developerName>
         <label>Welcome</label>
         <showInMenu>false</showInMenu>
         <type>Standard</type>
