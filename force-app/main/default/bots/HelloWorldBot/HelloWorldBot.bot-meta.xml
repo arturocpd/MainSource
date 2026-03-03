@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <agentDSLEnabled>true</agentDSLEnabled>
+    <agentType>EinsteinServiceAgent</agentType>
+    <botMlDomain>
+        <label>Hello World Bot</label>
+        <name>HelloWorldBot</name>
+    </botMlDomain>
+    <botSource>None</botSource>
+    <botUser>helloworldbot@00dgl00000mesez1973319599.ext</botUser>
+    <description>Hello World Bot</description>
+    <label>Hello World Bot</label>
+    <logPrivateConversationData>false</logPrivateConversationData>
+    <richContentEnabled>true</richContentEnabled>
+    <sessionTimeout>0</sessionTimeout>
+    <type>ExternalCopilot</type>
+</Bot>
