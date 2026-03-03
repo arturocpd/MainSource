@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Nexus Support Agent</description>
+    <localTopicLinks>
+        <genAiPluginName>Membership_Inquiry_16jgL000001ENFV</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>nexus_entry_16jgL000001ENFV</genAiPluginName>
+    </localTopicLinks>
+    <localTopics>
+        <fullName>nexus_entry_16jgL000001ENFV</fullName>
+        <canEscalate>false</canEscalate>
+        <description>The main entry point for all customer interactions.</description>
+        <developerName>nexus_entry_16jgL000001ENFV</developerName>
+        <genAiPluginInstructions>
+            <description>You are the Nexus Support Assistant, a professional and helpful guide for our services.</description>
+            <developerName>instruction0_179gL000001HmHO</developerName>
+            <language>en_US</language>
+            <masterLabel>instruction0_179gL000001HmHO</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localDeveloperName>nexus_entry</localDeveloperName>
+        <masterLabel>Nexus Entry</masterLabel>
+        <pluginType>Topic</pluginType>
+    </localTopics>
+    <localTopics>
+        <fullName>Membership_Inquiry_16jgL000001ENFV</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Handle questions about user status and premium benefits.</description>
+        <developerName>Membership_Inquiry_16jgL000001ENFV</developerName>
+        <genAiPluginInstructions>
+            <description>You are the Nexus Support Assistant, a professional and helpful guide for our services.</description>
+            <developerName>instruction0_179gL000001HmHN</developerName>
+            <language>en_US</language>
+            <masterLabel>instruction0_179gL000001HmHN</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localDeveloperName>Membership_Inquiry</localDeveloperName>
+        <masterLabel>Membership Inquiry</masterLabel>
+        <pluginType>Topic</pluginType>
+    </localTopics>
+    <masterLabel>Nexus Support Agent</masterLabel>
+    <plannerType>Atlas__ConcurrentMultiAgentOrchestration</plannerType>
+</GenAiPlannerBundle>
