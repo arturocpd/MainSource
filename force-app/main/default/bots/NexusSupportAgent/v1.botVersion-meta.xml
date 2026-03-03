@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>v1</fullName>
-    <entryDialog>Welcome</entryDialog>
-    <mainMenuId>nexus_main_menu</mainMenuId>
-    
+    <botDialogs>
+        <developerName>Agent_Execution_Placeholder</developerName>
+        <label>Agent Execution</label>
+        <showInMenu>false</showInMenu>
+        <botSteps>
+            <stepControlAction>CallPlanner</stepControlAction>
+            <type>StepControl</type>
+        </botSteps>
+        <type>Standard</type>
+    </botDialogs>
     <botDialogs>
         <developerName>Welcome</developerName>
         <label>Welcome</label>
@@ -18,22 +25,10 @@
         </botSteps>
         <type>Standard</type>
     </botDialogs>
-
-    <botDialogs>
-        <developerName>Agent_Execution_Placeholder</developerName>
-        <label>Agent Execution</label>
-        <showInMenu>false</showInMenu>
-        <botSteps>
-            <stepControlAction>CallPlanner</stepControlAction>
-            <type>StepControl</type>
-        </botSteps>
-        <type>Standard</type>
-    </botDialogs>
-
     <conversationSystemDialogs>
         <developerName>Error_Handler</developerName>
         <label>Error Handler</label>
     </conversationSystemDialogs>
-
+    <entryDialog>Welcome</entryDialog>
     <status>Active</status>
 </BotVersion>
