@@ -4,8 +4,8 @@
     <botDialogs>
         <developerName>Agent_Execution_Placeholder</developerName>
         <botSteps>
-            <stepControlAction>CallPlanner</stepControlAction>
             <type>StepControl</type>
+            <stepControlAction>CallPlanner</stepControlAction>
         </botSteps>
         <label>Agent Execution</label>
         <showInMenu>false</showInMenu>
@@ -14,13 +14,13 @@
     <botDialogs>
         <developerName>Welcome</developerName>
         <botSteps>
+            <type>Navigation</type>
             <botNavigation>
                 <botNavigationLinks>
                     <targetBotDialog>Agent_Execution_Placeholder</targetBotDialog>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <type>Navigation</type>
         </botSteps>
         <label>Welcome</label>
         <showInMenu>false</showInMenu>
