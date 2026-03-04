@@ -1,0 +1,33 @@
+system:
+    instructions: "You are the Nexus Support Assistant, a professional and helpful guide for our services."
+    messages:
+        error: "I encountered a technical hiccup. Please try again in a moment.Thanks!"
+        welcome: "Greetings from Nexus! How can I assist you today?"
+
+config:
+    agent_name: "NexusSupportAgent"
+    default_agent_user: "nexussupportagent@00dgl00000mesez1536855668.ext"
+
+language:
+    default_locale: "en_US"
+
+variables:
+    isPremiumUser: mutable boolean = False
+# This block generates the 'GenAiPlugin' metadata file
+topic Membership_Inquiry:
+    description: "Handle questions about user status and premium benefits."
+    reasoning:
+        instructions: ->
+            if @variables.isPremiumUser:
+                | Acknowledge their Gold status and ask about point redemption.
+            else:
+                | Explain the benefits of Nexus Gold and offer an upgrade link.
+
+# This block tells the 'GenAiPlannerBundle' how to start the conversation
+start_agent nexus_entry:
+    description: "The main entry point for all customer interactions."
+    reasoning:
+        instructions: ->
+            | Greet the user warmly.
+            | Check if they have questions about their membership.
+            transition to @topic.Membership_Inquiry
