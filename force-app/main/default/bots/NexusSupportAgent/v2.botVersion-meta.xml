@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>v1</fullName>
+    <fullName>v2</fullName>
     <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
     <botDialogs>
         <botSteps>
             <botMessages>
                 <message>Greetings from Nexus! How can I assist you today?</message>
-                <messageIdentifier>f3819388-7dda-4156-8aec-2b2776aa4225</messageIdentifier>
+                <messageIdentifier>12b998d5-6857-4a8d-a466-4a55d22804e2</messageIdentifier>
             </botMessages>
-            <stepIdentifier>d2dfb787-690a-43ac-9a5f-01a742550304</stepIdentifier>
+            <stepIdentifier>90734acd-f1be-464e-8766-7ad6700a546b</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>eb083066-c492-4f24-b5f6-0ce81c745c51</stepIdentifier>
+            <stepIdentifier>e2213cd8-1674-47ce-95f9-808ad6a6f450</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Welcome</developerName>
@@ -23,14 +23,14 @@
     <botDialogs>
         <botSteps>
             <botMessages>
-                <message>I encountered a technical hiccup. Please try again in a moment.</message>
-                <messageIdentifier>10266b05-af7f-44bc-92e6-9b2e59d168af</messageIdentifier>
+                <message>I encountered a technical hiccup. Please try again in a moment.Thanks!</message>
+                <messageIdentifier>5a11a115-248f-420c-a7a3-60dbe7df40ff</messageIdentifier>
             </botMessages>
-            <stepIdentifier>a5b9b923-c4a5-4878-8c1f-8ec0933218b1</stepIdentifier>
+            <stepIdentifier>96a18845-22c3-4940-9861-5851d7efaabd</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>fce282ee-18e8-4928-b4b2-da4b85cee1e8</stepIdentifier>
+            <stepIdentifier>2db1d421-1f23-45a6-9cec-1f4ddb566114</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Rich_Content_Error_Handling</developerName>
@@ -43,7 +43,7 @@
             <conversationSystemMessage>
                 <type>Transfer</type>
             </conversationSystemMessage>
-            <stepIdentifier>85788b7f-72ff-4be6-91bd-d25893799315</stepIdentifier>
+            <stepIdentifier>f5d6261c-f44c-4672-a12d-363b21ab343d</stepIdentifier>
             <type>SystemMessage</type>
         </botSteps>
         <developerName>Transfer_To_Agent</developerName>
@@ -53,7 +53,7 @@
     </botDialogs>
     <citationsEnabled>false</citationsEnabled>
     <conversationDefinitionPlanners>
-        <genAiPlannerName>NexusSupportAgent_v1</genAiPlannerName>
+        <genAiPlannerName>NexusSupportAgent_v2</genAiPlannerName>
     </conversationDefinitionPlanners>
     <conversationSystemDialogs>
         <dialog>Rich_Content_Error_Handling</dialog>
@@ -77,18 +77,18 @@
     </conversationVariables>
     <conversationVariables>
         <dataType>Boolean</dataType>
-        <description>Is Premium User</description>
-        <developerName>isPremiumUser</developerName>
-        <includeInPrompt>false</includeInPrompt>
-        <label>Is Premium User</label>
-        <visibility>Internal</visibility>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Boolean</dataType>
         <description>Runtime condition evaluation for if statements</description>
         <developerName>AgentScriptInternal_condition</developerName>
         <includeInPrompt>false</includeInPrompt>
         <label>Runtime Condition</label>
+        <visibility>Internal</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Boolean</dataType>
+        <description>Is Premium User</description>
+        <developerName>isPremiumUser</developerName>
+        <includeInPrompt>false</includeInPrompt>
+        <label>Is Premium User</label>
         <visibility>Internal</visibility>
     </conversationVariables>
     <copilotPrimaryLanguage>en_US</copilotPrimaryLanguage>
