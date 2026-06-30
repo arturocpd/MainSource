@@ -6,7 +6,7 @@
     "MayEdit": true,
     "Name": "Step1",
     "OmniProcessId": {
-        "Name": "AR case proceding",
+        "Name": "ROMAOmniScript",
         "VlocityDataPackType": "VlocityMatchingKeyObject",
         "VlocityMatchingRecordSourceKey": "OmniProcess/CaseProceeding/ServiceRequest/English",
         "VlocityRecordSObjectType": "OmniProcess"
@@ -37,7 +37,7 @@
             "remoteTimeout": 30000,
             "typeFilter": ""
         },
-        "label": "Step 1",
+        "label": "Step1",
         "message": {
         },
         "nextLabel": "Next",
