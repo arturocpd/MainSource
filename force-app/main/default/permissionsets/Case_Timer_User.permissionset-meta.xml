@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows users to record time against the case that is recorded by the Case Timer component. Without this permission, time will not be able to be saved against the user.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Case Timer User</label>
+</PermissionSet>
