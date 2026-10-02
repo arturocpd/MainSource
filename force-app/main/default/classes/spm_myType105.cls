@@ -8,7 +8,7 @@ public with sharing class spm_myType105 {
         }
     }
 
-      /**UAT change conflicting**/
+      /**Changes in Source Dev1**/
        /**2nd round of changes in Source Dev1**/
 
     public static Account setDefaultBillingAddress(Account a){

@@ -1,4 +1,4 @@
-public with sharing class spm_myType102 {
+public with sharing class spm_myType107 {
     
     Public static Account setDefaultDescription(Account a){
         If (a.Description != null) return a;
@@ -8,8 +8,8 @@ public with sharing class spm_myType102 {
         }
     }
 
-    /**Changes in Source Dev1**/
-     /**2nd round of changes in Source Dev1**/
+    /**___CONFLICT_1___**/
+    /**Rebase test**/
 
     public static Account setDefaultBillingAddress(Account a){
         a.billingstreet = 'Basauri, 6'; 
