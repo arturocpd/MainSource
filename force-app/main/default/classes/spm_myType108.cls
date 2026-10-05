@@ -1,4 +1,4 @@
-public with sharing class spm_myType109 {
+public with sharing class spm_myType108 {
     
     Public static Account setDefaultDescription(Account a){
         If (a.Description != null) return a;
