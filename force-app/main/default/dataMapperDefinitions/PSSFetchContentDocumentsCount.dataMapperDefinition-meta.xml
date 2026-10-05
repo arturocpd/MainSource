@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataMapperDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataMapperDefinitionItem>
+        <dataMapperDefItemName>PSSFetchContentDocumentsCount</dataMapperDefItemName>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>EQUAL</filterOperator>
+        <filterValue>IndividualApplicationId</filterValue>
+        <globalKey>PSSFetchContentDocumentsCountCustom6941</globalKey>
+        <inputField>ParentRecordId</inputField>
+        <inputObject>DocumentChecklistItem</inputObject>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <isDisabled>false</isDisabled>
+        <isRequiredForUpsert>false</isRequiredForUpsert>
+        <isUpsertKey>false</isUpsertKey>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputField>DocumentChecklistItems</outputField>
+        <outputObject>json</outputObject>
+    </dataMapperDefinitionItem>
+    <dataMapperDefinitionItem>
+        <dataMapperDefItemName>PSSFetchContentDocumentsCount</dataMapperDefItemName>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:DocumentChecklistItems ISBLANK 0 | var:DocumentChecklistItems LISTSIZE IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(DocumentChecklistItems),0,LISTSIZE(DocumentChecklistItems))</formulaExpression>
+        <formulaResultPath>DocumentCount</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>PSSFetchContentDocumentsCountCustom3181</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <isDisabled>false</isDisabled>
+        <isRequiredForUpsert>false</isRequiredForUpsert>
+        <isUpsertKey>false</isUpsertKey>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputField>Formula</outputField>
+        <outputObject>Formula</outputObject>
+    </dataMapperDefinitionItem>
+    <dataMapperDefinitionItem>
+        <dataMapperDefItemName>PSSFetchContentDocumentsCount</dataMapperDefItemName>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>PSSFetchContentDocumentsCountCustom6535</globalKey>
+        <inputField>DocumentCount</inputField>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <isDisabled>false</isDisabled>
+        <isRequiredForUpsert>false</isRequiredForUpsert>
+        <isUpsertKey>false</isUpsertKey>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputField>NumberOfDocuments</outputField>
+        <outputFieldDataType>Integer</outputFieldDataType>
+        <outputObject>json</outputObject>
+    </dataMapperDefinitionItem>
+    <description>Fetches the number of Content Documents associated with the application</description>
+    <inputType>JSON</inputType>
+    <isActive>true</isActive>
+    <isAssignmentRulesUsed>false</isAssignmentRulesUsed>
+    <isDeletedOnSuccess>false</isDeletedOnSuccess>
+    <isErrorIgnored>false</isErrorIgnored>
+    <isFldLevelSecurityEnabled>false</isFldLevelSecurityEnabled>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isNullInpIncludedInOput>false</isNullInpIncludedInOput>
+    <isProcessSuperBulk>false</isProcessSuperBulk>
+    <isRollbackOnError>false</isRollbackOnError>
+    <isSourceObjectDefault>false</isSourceObjectDefault>
+    <isXmlDeclarationRemoved>false</isXmlDeclarationRemoved>
+    <masterLabel>PSSFetchContentDocumentsCount</masterLabel>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;IndividualApplicationId&quot; : &quot;0iTRO0000000Acj2AE&quot;
+}</previewJsonData>
+    <references>[]</references>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <sourceObject>json</sourceObject>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+</DataMapperDefinition>
