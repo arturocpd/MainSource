@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataMapperDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <inputType>JSON</inputType>
+    <isActive>true</isActive>
+    <isAssignmentRulesUsed>false</isAssignmentRulesUsed>
+    <isDeletedOnSuccess>false</isDeletedOnSuccess>
+    <isErrorIgnored>false</isErrorIgnored>
+    <isFldLevelSecurityEnabled>true</isFldLevelSecurityEnabled>
+    <isManagedUsingStdDesigner>true</isManagedUsingStdDesigner>
+    <isNullInpIncludedInOput>false</isNullInpIncludedInOput>
+    <isProcessSuperBulk>false</isProcessSuperBulk>
+    <isRollbackOnError>false</isRollbackOnError>
+    <isSourceObjectDefault>false</isSourceObjectDefault>
+    <isXmlDeclarationRemoved>false</isXmlDeclarationRemoved>
+    <masterLabel>UpdateAccountPhoneDM</masterLabel>
+    <outputType>SObject</outputType>
+    <references>[]</references>
+    <type>Load</type>
+</DataMapperDefinition>
