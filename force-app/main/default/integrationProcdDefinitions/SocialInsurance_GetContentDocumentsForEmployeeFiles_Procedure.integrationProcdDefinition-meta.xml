@@ -3,17 +3,18 @@
     <description>Gets the assessment completed by the employee to file a workers&apos; compensation claim and the content documents for the files that the employee has uploaded during the assessment.</description>
     <integProcdName>GetContentDocumentsForEmployeeFiles</integProcdName>
     <integrationProcdDefElmnt>
-        <integProcdDefElmntName>TransformUploadDocuments</integProcdDefElmntName>
+        <integProcdDefElmntName>FetchEmployeeAssessment</integProcdDefElmntName>
         <isActive>true</isActive>
         <level>0.0</level>
         <propertySetConfig>
             <actionMessage></actionMessage>
             <additionalInput>{}</additionalInput>
             <additionalOutput>{}</additionalOutput>
-            <bundle>PSSSocInsCreateContentDocumentCollection</bundle>
+            <bundle>PSSSocInsFetchEmployeeAssessment</bundle>
             <chainOnStep>false</chainOnStep>
+            <dataRaptorInputParameters>[{&quot;inputParam&quot;:&quot;ContextId&quot;,&quot;element&quot;:&quot;ContextId&quot;}]</dataRaptorInputParameters>
             <disOnTplt>false</disOnTplt>
-            <dynamicProperties>{&quot;show&quot;:null,&quot;label&quot;:&quot;DataMapperTransformAction1&quot;}</dynamicProperties>
+            <dynamicProperties>{&quot;show&quot;:null,&quot;label&quot;:&quot;DataMapperExtractAction2&quot;}</dynamicProperties>
             <executionConditionalFormula></executionConditionalFormula>
             <failOnStepError>true</failOnStepError>
             <failureConditionalFormula></failureConditionalFormula>
@@ -23,13 +24,13 @@
             <responseJSONPath></responseJSONPath>
             <returnOnlyAdditionalOutput>false</returnOnlyAdditionalOutput>
             <returnOnlyFailureResponse>false</returnOnlyFailureResponse>
-            <sendJSONNode>PSS_SI_v1_UploadDocument</sendJSONNode>
-            <sendJSONPath>MergeUploadDocuments</sendJSONPath>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
             <sendOnlyAdditionalInput>false</sendOnlyAdditionalInput>
             <useFormulas>true</useFormulas>
         </propertySetConfig>
-        <sequenceNumber>9.0</sequenceNumber>
-        <type>DataRaptor Transform Action</type>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
     </integrationProcdDefElmnt>
     <integrationProcdDefElmnt>
         <integProcdDefElmntName>GetUploadDocumentDocumentIds</integProcdDefElmntName>
@@ -62,34 +63,6 @@
         <type>DataRaptor Extract Action</type>
     </integrationProcdDefElmnt>
     <integrationProcdDefElmnt>
-        <integProcdDefElmntName>MergeUploadDocuments</integProcdDefElmntName>
-        <isActive>true</isActive>
-        <level>0.0</level>
-        <propertySetConfig>
-            <actionMessage></actionMessage>
-            <additionalChainableResponse>{}</additionalChainableResponse>
-            <additionalInput>{}</additionalInput>
-            <additionalOutput>{}</additionalOutput>
-            <chainOnStep>false</chainOnStep>
-            <disOnTplt>false</disOnTplt>
-            <dynamicProperties>{&quot;advancedMerge&quot;:false,&quot;advancedMergeMap&quot;:[],&quot;preventIntraListMerge&quot;:false,&quot;mergeFields&quot;:[&quot;data&quot;],&quot;allowMergeNulls&quot;:true,&quot;hasPrimary&quot;:false,&quot;primaryListKey&quot;:&quot;&quot;,&quot;sortBy&quot;:[],&quot;sortInDescendingOrder&quot;:false,&quot;mergeListsOrder&quot;:[&quot;GetUploadDocumentDocumentIds:ContentVersion&quot;,&quot;GetUploadDocumentDocumentIds:ContentDocument&quot;],&quot;filterListFormula&quot;:&quot;&quot;,&quot;dynamicOutputFields&quot;:&quot;&quot;,&quot;updateFieldValue&quot;:{},&quot;show&quot;:null,&quot;label&quot;:&quot;ListAction1&quot;}</dynamicProperties>
-            <executionConditionalFormula></executionConditionalFormula>
-            <failOnStepError>true</failOnStepError>
-            <failureConditionalFormula></failureConditionalFormula>
-            <failureResponse>{}</failureResponse>
-            <responseJSONNode></responseJSONNode>
-            <responseJSONPath></responseJSONPath>
-            <returnOnlyAdditionalOutput>false</returnOnlyAdditionalOutput>
-            <returnOnlyFailureResponse>false</returnOnlyFailureResponse>
-            <sendJSONNode></sendJSONNode>
-            <sendJSONPath></sendJSONPath>
-            <sendOnlyAdditionalInput>false</sendOnlyAdditionalInput>
-            <useFormulas>true</useFormulas>
-        </propertySetConfig>
-        <sequenceNumber>8.0</sequenceNumber>
-        <type>List Merge Action</type>
-    </integrationProcdDefElmnt>
-    <integrationProcdDefElmnt>
         <integProcdDefElmntName>GetUploadPayslipDocumentIds</integProcdDefElmntName>
         <isActive>true</isActive>
         <level>0.0</level>
@@ -120,26 +93,32 @@
         <type>DataRaptor Extract Action</type>
     </integrationProcdDefElmnt>
     <integrationProcdDefElmnt>
-        <integProcdDefElmntName>SendContentDocumentIds</integProcdDefElmntName>
+        <integProcdDefElmntName>MergeUploadDocuments</integProcdDefElmntName>
         <isActive>true</isActive>
         <level>0.0</level>
         <propertySetConfig>
-            <additionalOutput>{&quot;CertificateOfCapacity&quot;:&quot;=%TransformUploadDocuments%&quot;,&quot;WorkersEmploymentDetails&quot;:&quot;=%TransformUploadPayslips%&quot;}</additionalOutput>
+            <actionMessage></actionMessage>
+            <additionalChainableResponse>{}</additionalChainableResponse>
+            <additionalInput>{}</additionalInput>
+            <additionalOutput>{}</additionalOutput>
+            <chainOnStep>false</chainOnStep>
             <disOnTplt>false</disOnTplt>
-            <dynamicProperties>{&quot;responseDefaultData&quot;:{},&quot;show&quot;:null,&quot;label&quot;:&quot;ResponseAction4&quot;}</dynamicProperties>
+            <dynamicProperties>{&quot;advancedMerge&quot;:false,&quot;advancedMergeMap&quot;:[],&quot;preventIntraListMerge&quot;:false,&quot;mergeFields&quot;:[&quot;data&quot;],&quot;allowMergeNulls&quot;:true,&quot;hasPrimary&quot;:false,&quot;primaryListKey&quot;:&quot;&quot;,&quot;sortBy&quot;:[],&quot;sortInDescendingOrder&quot;:false,&quot;mergeListsOrder&quot;:[&quot;GetUploadDocumentDocumentIds:ContentVersion&quot;,&quot;GetUploadDocumentDocumentIds:ContentDocument&quot;],&quot;filterListFormula&quot;:&quot;&quot;,&quot;dynamicOutputFields&quot;:&quot;&quot;,&quot;updateFieldValue&quot;:{},&quot;show&quot;:null,&quot;label&quot;:&quot;ListAction1&quot;}</dynamicProperties>
             <executionConditionalFormula></executionConditionalFormula>
-            <responseFormat>JSON</responseFormat>
+            <failOnStepError>true</failOnStepError>
+            <failureConditionalFormula></failureConditionalFormula>
+            <failureResponse>{}</failureResponse>
             <responseJSONNode></responseJSONNode>
             <responseJSONPath></responseJSONPath>
-            <returnFullDataJSON>false</returnFullDataJSON>
             <returnOnlyAdditionalOutput>false</returnOnlyAdditionalOutput>
+            <returnOnlyFailureResponse>false</returnOnlyFailureResponse>
             <sendJSONNode></sendJSONNode>
             <sendJSONPath></sendJSONPath>
+            <sendOnlyAdditionalInput>false</sendOnlyAdditionalInput>
             <useFormulas>true</useFormulas>
-            <vlcResponseHeaders>{}</vlcResponseHeaders>
         </propertySetConfig>
-        <sequenceNumber>10.0</sequenceNumber>
-        <type>Response Action</type>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>List Merge Action</type>
     </integrationProcdDefElmnt>
     <integrationProcdDefElmnt>
         <integProcdDefElmntName>MergeUploadPayslips</integProcdDefElmntName>
@@ -170,18 +149,39 @@
         <type>List Merge Action</type>
     </integrationProcdDefElmnt>
     <integrationProcdDefElmnt>
-        <integProcdDefElmntName>FetchEmployeeAssessment</integProcdDefElmntName>
+        <integProcdDefElmntName>SendContentDocumentIds</integProcdDefElmntName>
+        <isActive>true</isActive>
+        <level>0.0</level>
+        <propertySetConfig>
+            <additionalOutput>{&quot;CertificateOfCapacity&quot;:&quot;=%TransformUploadDocuments%&quot;,&quot;WorkersEmploymentDetails&quot;:&quot;=%TransformUploadPayslips%&quot;}</additionalOutput>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;responseDefaultData&quot;:{},&quot;show&quot;:null,&quot;label&quot;:&quot;ResponseAction4&quot;}</dynamicProperties>
+            <executionConditionalFormula></executionConditionalFormula>
+            <responseFormat>JSON</responseFormat>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <returnFullDataJSON>false</returnFullDataJSON>
+            <returnOnlyAdditionalOutput>false</returnOnlyAdditionalOutput>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <useFormulas>true</useFormulas>
+            <vlcResponseHeaders>{}</vlcResponseHeaders>
+        </propertySetConfig>
+        <sequenceNumber>10.0</sequenceNumber>
+        <type>Response Action</type>
+    </integrationProcdDefElmnt>
+    <integrationProcdDefElmnt>
+        <integProcdDefElmntName>TransformUploadDocuments</integProcdDefElmntName>
         <isActive>true</isActive>
         <level>0.0</level>
         <propertySetConfig>
             <actionMessage></actionMessage>
             <additionalInput>{}</additionalInput>
             <additionalOutput>{}</additionalOutput>
-            <bundle>PSSSocInsFetchEmployeeAssessment</bundle>
+            <bundle>PSSSocInsCreateContentDocumentCollection</bundle>
             <chainOnStep>false</chainOnStep>
-            <dataRaptorInputParameters>[{&quot;inputParam&quot;:&quot;ContextId&quot;,&quot;element&quot;:&quot;ContextId&quot;}]</dataRaptorInputParameters>
             <disOnTplt>false</disOnTplt>
-            <dynamicProperties>{&quot;show&quot;:null,&quot;label&quot;:&quot;DataMapperExtractAction2&quot;}</dynamicProperties>
+            <dynamicProperties>{&quot;show&quot;:null,&quot;label&quot;:&quot;DataMapperTransformAction1&quot;}</dynamicProperties>
             <executionConditionalFormula></executionConditionalFormula>
             <failOnStepError>true</failOnStepError>
             <failureConditionalFormula></failureConditionalFormula>
@@ -191,13 +191,42 @@
             <responseJSONPath></responseJSONPath>
             <returnOnlyAdditionalOutput>false</returnOnlyAdditionalOutput>
             <returnOnlyFailureResponse>false</returnOnlyFailureResponse>
-            <sendJSONNode></sendJSONNode>
-            <sendJSONPath></sendJSONPath>
+            <sendJSONNode>PSS_SI_v1_UploadDocument</sendJSONNode>
+            <sendJSONPath>MergeUploadDocuments</sendJSONPath>
             <sendOnlyAdditionalInput>false</sendOnlyAdditionalInput>
             <useFormulas>true</useFormulas>
         </propertySetConfig>
-        <sequenceNumber>1.0</sequenceNumber>
-        <type>DataRaptor Extract Action</type>
+        <sequenceNumber>9.0</sequenceNumber>
+        <type>DataRaptor Transform Action</type>
+    </integrationProcdDefElmnt>
+    <integrationProcdDefElmnt>
+        <integProcdDefElmntName>TransformUploadPayslips</integProcdDefElmntName>
+        <isActive>true</isActive>
+        <level>0.0</level>
+        <propertySetConfig>
+            <actionMessage></actionMessage>
+            <additionalInput>{}</additionalInput>
+            <additionalOutput>{}</additionalOutput>
+            <bundle>PSSSocInsCreateContentDocumentCollection</bundle>
+            <chainOnStep>false</chainOnStep>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;show&quot;:null,&quot;label&quot;:&quot;DataMapperTransformAction1&quot;}</dynamicProperties>
+            <executionConditionalFormula></executionConditionalFormula>
+            <failOnStepError>true</failOnStepError>
+            <failureConditionalFormula></failureConditionalFormula>
+            <failureResponse>{}</failureResponse>
+            <ignoreCache>false</ignoreCache>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <returnOnlyAdditionalOutput>false</returnOnlyAdditionalOutput>
+            <returnOnlyFailureResponse>false</returnOnlyFailureResponse>
+            <sendJSONNode>PSS_SI_v1_UploadPayslips</sendJSONNode>
+            <sendJSONPath>MergeUploadPayslips</sendJSONPath>
+            <sendOnlyAdditionalInput>false</sendOnlyAdditionalInput>
+            <useFormulas>true</useFormulas>
+        </propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>DataRaptor Transform Action</type>
     </integrationProcdDefElmnt>
     <integrationProcdDefElmnt>
         <integProcdDefElmntName>UploadDocuments_QuestionName</integProcdDefElmntName>
@@ -236,35 +265,6 @@
         </propertySetConfig>
         <sequenceNumber>2.0</sequenceNumber>
         <type>Set Values</type>
-    </integrationProcdDefElmnt>
-    <integrationProcdDefElmnt>
-        <integProcdDefElmntName>TransformUploadPayslips</integProcdDefElmntName>
-        <isActive>true</isActive>
-        <level>0.0</level>
-        <propertySetConfig>
-            <actionMessage></actionMessage>
-            <additionalInput>{}</additionalInput>
-            <additionalOutput>{}</additionalOutput>
-            <bundle>PSSSocInsCreateContentDocumentCollection</bundle>
-            <chainOnStep>false</chainOnStep>
-            <disOnTplt>false</disOnTplt>
-            <dynamicProperties>{&quot;show&quot;:null,&quot;label&quot;:&quot;DataMapperTransformAction1&quot;}</dynamicProperties>
-            <executionConditionalFormula></executionConditionalFormula>
-            <failOnStepError>true</failOnStepError>
-            <failureConditionalFormula></failureConditionalFormula>
-            <failureResponse>{}</failureResponse>
-            <ignoreCache>false</ignoreCache>
-            <responseJSONNode></responseJSONNode>
-            <responseJSONPath></responseJSONPath>
-            <returnOnlyAdditionalOutput>false</returnOnlyAdditionalOutput>
-            <returnOnlyFailureResponse>false</returnOnlyFailureResponse>
-            <sendJSONNode>PSS_SI_v1_UploadPayslips</sendJSONNode>
-            <sendJSONPath>MergeUploadPayslips</sendJSONPath>
-            <sendOnlyAdditionalInput>false</sendOnlyAdditionalInput>
-            <useFormulas>true</useFormulas>
-        </propertySetConfig>
-        <sequenceNumber>5.0</sequenceNumber>
-        <type>DataRaptor Transform Action</type>
     </integrationProcdDefElmnt>
     <integrationProcedureDefKey>SocialInsurance_GetContentDocumentsForEmployeeFiles</integrationProcedureDefKey>
     <integrationProcedureType>Integration Procedure</integrationProcedureType>
