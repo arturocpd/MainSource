@@ -8,7 +8,7 @@ public with sharing class spm_myType102 {
         }
     }
 
-    /**Conflict test change in SourceDev1**/
+    /**Sync error test change**/
      /**3nd round of changes in Source Dev1 with Cline**/
 
     public static Account setDefaultBillingAddress(Account a){
