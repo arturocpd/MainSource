@@ -28,7 +28,7 @@
         </states>
         <theme>slds</theme>
         <title>CreditAccountTest</title>
-        <xmlObject>{&quot;targetConfigs&quot;:&quot;PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX0FwcFBhZ2UiPgogICAgICAgICAgICAgICAgICAgIDxwcm9wZXJ0eSBuYW1lPSJkZWJ1ZyIgdHlwZT0iQm9vbGVhbiIvPgogICAgICAgICAgICAgICAgICAgIDxwcm9wZXJ0eSBuYW1lPSJyZWNvcmRJZCIgdHlwZT0iU3RyaW5nIi8+CiAgICAgICAgICAgICAgICA8L3RhcmdldENvbmZpZz4KICAgICAgICAgICAgICAgIDx0YXJnZXRDb25maWcgdGFyZ2V0cz0ibGlnaHRuaW5nX19SZWNvcmRQYWdlIj4KICAgICAgICAgICAgICAgICAgICA8cHJvcGVydHkgbmFtZT0iZGVidWciIHR5cGU9IkJvb2xlYW4iLz4KICAgICAgICAgICAgICAgIDwvdGFyZ2V0Q29uZmlnPg==&quot;,&quot;targets&quot;:{&quot;target&quot;:[&quot;lightning__RecordPage&quot;,&quot;lightning__AppPage&quot;,&quot;lightning__HomePage&quot;]},&quot;apiVersion&quot;:61,&quot;description&quot;:&quot;&quot;}</xmlObject>
+        <xmlObject>{&quot;targetConfigs&quot;:&quot;PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX0FwcFBhZ2UiPgogICAgICAgICAgICAgICAgICAgIDxwcm9wZXJ0eSBuYW1lPSJkZWJ1ZyIgdHlwZT0iQm9vbGVhbiIvPgogICAgICAgICAgICAgICAgICAgIDxwcm9wZXJ0eSBuYW1lPSJyZWNvcmRJZCIgdHlwZT0iU3RyaW5nIi8+CiAgICAgICAgICAgICAgICA8L3RhcmdldENvbmZpZz4KICAgICAgICAgICAgICAgIDx0YXJnZXRDb25maWcgdGFyZ2V0cz0ibGlnaHRuaW5nX19SZWNvcmRQYWdlIj4KICAgICAgICAgICAgICAgICAgICA8cHJvcGVydHkgbmFtZT0iZGVidWciIHR5cGU9IkJvb2xlYW4iLz4KICAgICAgICAgICAgICAgIDwvdGFyZ2V0Q29uZmlnPg==&quot;,&quot;targets&quot;:{&quot;target&quot;:[&quot;lightning__RecordPage&quot;,&quot;lightning__AppPage&quot;,&quot;lightning__HomePage&quot;]},&quot;apiVersion&quot;:61,&quot;description&quot;:&quot;&quot;,&quot;masterLabel&quot;:&quot;CreditAccountTest&quot;}</xmlObject>
     </propertySetConfig>
     <references>[]</references>
 </FlexcardDefinition>

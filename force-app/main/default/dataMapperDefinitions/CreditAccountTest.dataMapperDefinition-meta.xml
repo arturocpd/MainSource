@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataMapperDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <batchSize>0.0</batchSize>
     <description>DataMapperDefinition CreditAccountTest</description>
     <inputType>JSON</inputType>
     <isActive>true</isActive>
@@ -16,5 +17,7 @@
     <masterLabel>CreditAccountTest</masterLabel>
     <outputType>SObject</outputType>
     <references>[]</references>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
     <type>Load</type>
 </DataMapperDefinition>
