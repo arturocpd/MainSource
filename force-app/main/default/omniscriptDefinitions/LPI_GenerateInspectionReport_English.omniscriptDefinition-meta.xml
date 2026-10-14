@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniscriptDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isActive>true</isActive>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isOmniscriptReusable>false</isOmniscriptReusable>
+    <masterLabel>LPI_GenerateInspectionReport_English</masterLabel>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Set Generation Options</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;attachFileFormat&quot;:&quot;docx&quot;,&quot;docGenerationMechanism&quot;:&quot;ClientSide&quot;,&quot;documentViewer&quot;:&quot;PDF&quot;,&quot;downloadFileFormat&quot;:&quot;all&quot;,&quot;pdfGenerationSource&quot;:&quot;ClientSide&quot;,&quot;useTemplateDRExtract&quot;:&quot;Yes&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>GetVisitDetails</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>LPIGetVisitDetailsForDocument</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;ContextId&quot;,&quot;inputParam&quot;:&quot;ContextId&quot;}]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <ignoreCache>false</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>GetVisitDetails</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>View/Print</omniScriptDefElementName>
+        <parentElementName>Generate Document</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>7</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <iconName></iconName>
+            <iconPosition>left</iconPosition>
+            <iconVariant></iconVariant>
+            <label>View / Print</label>
+            <loginAction>login</loginAction>
+            <message>{}</message>
+            <objectAction>home</objectAction>
+            <pubsub>false</pubsub>
+            <recordAction>view</recordAction>
+            <replace>false</replace>
+            <ssm>false</ssm>
+            <targetFilter>Recent</targetFilter>
+            <targetId>%docGenContentVersionId%</targetId>
+            <targetLWCLayout>lightning</targetLWCLayout>
+            <targetType>Record</targetType>
+            <validationRequired>Submit</validationRequired>
+            <variant>brand</variant>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Navigate Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetTemplateType</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;templateType&quot;:&quot;=%selectedTemplate:TemplateType%&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Generate Document</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Generate Inspection Report</label>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <validationRequired>true</validationRequired>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <description>context-id -- SObjectId like QuoteId, OpportunityId,OrderId &amp; ContractId
+selected-template -- selected Template JSON node from previous step. 
+debug -- optional for debugging
+document-title  -- Overrides the Default Document Name/Title of your document</description>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>GenerateDocumentWord</omniScriptDefElementName>
+        <parentElementName>Generate Document</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;name&quot;:&quot;context-id&quot;,&quot;source&quot;:&quot;%ContextId%&quot;},{&quot;name&quot;:&quot;selected-template&quot;,&quot;source&quot;:&quot;%selectedTemplate%&quot;},{&quot;name&quot;:&quot;debug&quot;,&quot;source&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;document-title&quot;,&quot;source&quot;:&quot;InspectionReport&quot;}]</customAttributes>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>Generate Document Word</label>
+            <lwcName>omnistudio__clmOsDocxGenerateDocument</lwcName>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>false</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>EmailWordDocument</omniScriptDefElementName>
+        <parentElementName>Generate Document</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <attachmentList></attachmentList>
+            <contentVersionList>%docGenContentVersionId%</contentVersionList>
+            <controlWidth>5</controlWidth>
+            <disOnTplt>false</disOnTplt>
+            <docList></docList>
+            <dynamicProperties>{}</dynamicProperties>
+            <emailInformation>{&quot;bccAddressList&quot;:[],&quot;ccAddressList&quot;:[],&quot;emailBody&quot;:&quot;This is the Inspection Report for Visit %VisitName%&quot;,&quot;emailSubject&quot;:&quot;Inspection Report for Visit %VisitName%&quot;,&quot;setHtmlBody&quot;:false,&quot;toAddressList&quot;:[&quot;%EmailAddress%&quot;]}</emailInformation>
+            <emailTemplateInformation>{&quot;emailTargetObjectId&quot;:&quot;&quot;,&quot;emailTemplateName&quot;:&quot;&quot;,&quot;saveAsActivity&quot;:false,&quot;whatId&quot;:&quot;&quot;}</emailTemplateInformation>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <fileAttachments></fileAttachments>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>Email Inspection Report</label>
+            <message>{}</message>
+            <orgWideEmailAddress></orgWideEmailAddress>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;true&quot;,&quot;field&quot;:&quot;isWordAttachDone&quot;}]}}</show>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <staticDocList>[]</staticDocList>
+            <useTemplate>false</useTemplate>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Email Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>GetTemplate</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>LPILookupInspectionDocumentTemplate</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <ignoreCache>false</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>GetTemplate</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>false</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>EmailAddress</omniScriptDefElementName>
+        <parentElementName>Generate Document</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>6</controlWidth>
+            <debounceValue>0</debounceValue>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Email Address</label>
+            <pattern></pattern>
+            <placeholder></placeholder>
+            <ptrnErrText></ptrnErrText>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>false</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Email</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>LineBreak1</omniScriptDefElementName>
+        <parentElementName>Generate Document</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>1</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>LineBreak1</label>
+            <padding>0</padding>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Line Break</type>
+    </omniscriptDefinitionElement>
+    <omniscriptLanguage>English</omniscriptLanguage>
+    <omniscriptName>LPI Generate Inspection Report</omniscriptName>
+    <propertySetConfig>
+        <allowCancel>true</allowCancel>
+        <allowSaveForLater>false</allowSaveForLater>
+        <autoFocus>false</autoFocus>
+        <autoSaveOnStepNext>false</autoSaveOnStepNext>
+        <bulk>false</bulk>
+        <cancelRedirectPageName>OmniScriptCancelled</cancelRedirectPageName>
+        <cancelRedirectTemplateUrl>vlcCancelled.html</cancelRedirectTemplateUrl>
+        <cancelSource>%ContextId%</cancelSource>
+        <cancelType>SObject</cancelType>
+        <consoleTabIcon>custom:custom18</consoleTabIcon>
+        <consoleTabLabel>New</consoleTabLabel>
+        <currencyCode></currencyCode>
+        <currentLanguage>en_US</currentLanguage>
+        <disableUnloadWarn>true</disableUnloadWarn>
+        <dynamicProperties>{}</dynamicProperties>
+        <elementTypeToHTMLTemplateMapping>{}</elementTypeToHTMLTemplateMapping>
+        <enableKnowledge>false</enableKnowledge>
+        <errorMessage>{&quot;custom&quot;:[]}</errorMessage>
+        <hideStepChart>true</hideStepChart>
+        <knowledgeArticleTypeQueryFieldsMap>{}</knowledgeArticleTypeQueryFieldsMap>
+        <message>{}</message>
+        <persistentComponent>[{&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;label&quot;:&quot;&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalSize&quot;:&quot;lg&quot;},&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteOptions&quot;:{&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;},&quot;remoteTimeout&quot;:30000,&quot;render&quot;:false,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;},{&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;label&quot;:&quot;&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalController&quot;:&quot;&quot;,&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;},&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteOptions&quot;:{&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;},&quot;remoteTimeout&quot;:30000,&quot;render&quot;:false}]</persistentComponent>
+        <pubsub>false</pubsub>
+        <rtpSeed>false</rtpSeed>
+        <saveContentEncoded>false</saveContentEncoded>
+        <saveForLaterRedirectPageName>sflRedirect</saveForLaterRedirectPageName>
+        <saveForLaterRedirectTemplateUrl>vlcSaveForLaterAcknowledge.html</saveForLaterRedirectTemplateUrl>
+        <saveObjectId>%ContextId%</saveObjectId>
+        <saveURLPatterns>{}</saveURLPatterns>
+        <seedDataJSON>{}</seedDataJSON>
+        <showInputWidth>false</showInputWidth>
+        <ssm>false</ssm>
+        <stepChartPlacement>right</stepChartPlacement>
+        <stylesheet>{&quot;newport&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;}</stylesheet>
+        <timeTracking>false</timeTracking>
+        <trackingCustomData>{}</trackingCustomData>
+        <visualforcePagesAvailableInPreview>{}</visualforcePagesAvailableInPreview>
+        <wpm>false</wpm>
+    </propertySetConfig>
+    <references>[{&quot;name&quot;:&quot;LPIGetVisitDetailsForDocument&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;LPILookupInspectionDocumentTemplate&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;}]</references>
+    <subType>GenerateInspectionReport</subType>
+    <type>LPI</type>
+</OmniscriptDefinition>

@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniscriptDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Stores application data in business proc</description>
+    <isActive>true</isActive>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isOmniscriptReusable>false</isOmniscriptReusable>
+    <masterLabel>BenefitManagement_CheckEligibilityAndAssignBenefit_English</masterLabel>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>AcceptApplication</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>false</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Check Eligibility?</label>
+            <message>{}</message>
+            <nextLabel>Check Eligibility</nextLabel>
+            <nextWidth>4</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TextBlock1</omniScriptDefElementName>
+        <parentElementName>AcceptApplication</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock1</label>
+            <sanitize>false</sanitize>
+            <text>&lt;p&gt;After you check the eligibility, any modifications to the assessment responses don&apos;t affect the eligibility of participants. Make sure that the assessment responses are accurate before checking the eligibility.&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;Note&lt;/strong&gt;: To revise the application details after checking the eligibility, modify the relevant application records. Then check the eligibility of participants based on the revised details.&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>ApproveApplication</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>false</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Create Benefit Assignment</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;$Vlocity.NULL&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;EligibleBenefitAmount&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Application Accepted&quot;},{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;}]}},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;data&quot;:&quot;0&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>12.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>Benefit</omniScriptDefElementName>
+        <parentElementName>ApproveApplication</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <clearValue>true</clearValue>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>6</controlWidth>
+            <dataSource>{&quot;type&quot;:&quot;SObject&quot;,&quot;mapItems&quot;:{&quot;phase1MapItems&quot;:[{&quot;InterfaceObjectName__c&quot;:&quot;Benefit&quot;,&quot;InterfaceFieldAPIName__c&quot;:&quot;Id&quot;,&quot;FilterOperator__c&quot;:&quot;&lt;&gt;&quot;,&quot;FilterValue__c&quot;:&quot;\&quot;\&quot;&quot;,&quot;InterfaceObjectLookupOrder__c&quot;:1,&quot;DomainObjectFieldAPIName__c&quot;:&quot;Benefit&quot;}],&quot;phase2MapItems&quot;:[{&quot;DomainObjectFieldAPIName__c&quot;:&quot;name&quot;,&quot;InterfaceFieldAPIName__c&quot;:&quot;Benefit:Id&quot;,&quot;DomainObjectAPIName__c&quot;:&quot;JSON&quot;,&quot;DomainObjectCreationOrder__c&quot;:1},{&quot;DomainObjectFieldAPIName__c&quot;:&quot;value&quot;,&quot;InterfaceFieldAPIName__c&quot;:&quot;Benefit:Name&quot;,&quot;DomainObjectAPIName__c&quot;:&quot;JSON&quot;,&quot;DomainObjectCreationOrder__c&quot;:1}],&quot;inputParameters&quot;:[]}}</dataSource>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;helpTextPos&quot;:&quot;&quot;}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Benefit</label>
+            <placeholder></placeholder>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>true</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Lookup</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>EndDate</omniScriptDefElementName>
+        <parentElementName>ApproveApplication</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>6</controlWidth>
+            <dateFormat>MM-dd-yyyy</dateFormat>
+            <dateType>string</dateType>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;helpTextPos&quot;:&quot;&quot;}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>End Date</label>
+            <maxDate></maxDate>
+            <minDate></minDate>
+            <modelDateFormat>yyyy-MM-dd</modelDateFormat>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>true</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Date</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>EntitlementAmount</omniScriptDefElementName>
+        <parentElementName>ApproveApplication</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <allowNegative>false</allowNegative>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>6</controlWidth>
+            <debounceValue>0</debounceValue>
+            <defaultValue>%EligibleBenefitAmount%</defaultValue>
+            <disOnTplt>false</disOnTplt>
+            <displayCurrencyCode>false</displayCurrencyCode>
+            <dynamicProperties>{&quot;helpTextPos&quot;:&quot;&quot;}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <hideGroupSep>false</hideGroupSep>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Entitlement Amount</label>
+            <placeholder></placeholder>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>true</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Currency</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>PayoutFrequency</omniScriptDefElementName>
+        <parentElementName>ApproveApplication</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>6</controlWidth>
+            <controllingField>{&quot;element&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;}</controllingField>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;helpTextPos&quot;:&quot;&quot;}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Payout Frequency</label>
+            <optionSource>{&quot;type&quot;:&quot;SObject&quot;,&quot;source&quot;:&quot;BenefitAssignment.PayoutFrequency&quot;}</optionSource>
+            <options>[]</options>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>true</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Select</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>StartDate</omniScriptDefElementName>
+        <parentElementName>ApproveApplication</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>6</controlWidth>
+            <dateFormat>MM-dd-yyyy</dateFormat>
+            <dateType>string</dateType>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;helpTextPos&quot;:&quot;&quot;}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Start Date</label>
+            <maxDate></maxDate>
+            <minDate></minDate>
+            <modelDateFormat>yyyy-MM-dd</modelDateFormat>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>true</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Date</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TotalApprovedAmount</omniScriptDefElementName>
+        <parentElementName>ApproveApplication</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <allowNegative>false</allowNegative>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>6</controlWidth>
+            <debounceValue>0</debounceValue>
+            <disOnTplt>false</disOnTplt>
+            <displayCurrencyCode>false</displayCurrencyCode>
+            <dynamicProperties>{&quot;helpTextPos&quot;:&quot;&quot;}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <hideGroupSep>false</hideGroupSep>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Total Approved Amount</label>
+            <placeholder></placeholder>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>true</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Currency</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>CANCEL</omniScriptDefElementName>
+        <propertySetConfig>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{&quot;showCancelPrompt&quot;:false}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <iconName></iconName>
+            <iconPosition>left</iconPosition>
+            <iconVariant></iconVariant>
+            <label>Cancel</label>
+            <loginAction>login</loginAction>
+            <message>{}</message>
+            <objectAction>home</objectAction>
+            <pubsub>false</pubsub>
+            <recordAction>view</recordAction>
+            <replace>false</replace>
+            <ssm>false</ssm>
+            <targetFilter>Recent</targetFilter>
+            <targetId>%ContextId%</targetId>
+            <targetLWCLayout>lightning</targetLWCLayout>
+            <targetType>Record</targetType>
+            <validationRequired>Submit</validationRequired>
+            <variant>brand</variant>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Navigate Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Confirmation</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>false</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Confirmation</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel></previousLabel>
+            <previousWidth>0</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;$Vlocity.NULL&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;EligibleBenefitAmount&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;},{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Application Accepted&quot;}]}},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;data&quot;:&quot;0&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>19.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TextBlock5</omniScriptDefElementName>
+        <parentElementName>Confirmation</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock5</label>
+            <sanitize>false</sanitize>
+            <text>&lt;p style=&quot;text-align: center;&quot;&gt;The benefit assignment &lt;a href=&quot;/lightning/r/BenefitAssignment/%DRId_BenefitAssignment%/view&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;%BenefitAssignmntName%&lt;/a&gt; was created.&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>CreateBenefitAssignment</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSCreateBenefitAssignment1</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:&quot;&quot;}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel></failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>CreateBenefitAssignment</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath>BenefitAssignmentDetails</sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;$Vlocity.NULL&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;EligibleBenefitAmount&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;},{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Application Accepted&quot;}]}},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;data&quot;:&quot;0&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>16.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>CreatePartyRelationshipGroup</omniScriptDefElementName>
+        <propertySetConfig>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <extraPayload>{}</extraPayload>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel></failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <integrationProcedureKey>BenefitManagement_CreateHousehold</integrationProcedureKey>
+            <label>CreatePartyRelationshipGroup</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <preTransformBundle></preTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteOptions>{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;},{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Application Accepted&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;data&quot;:&quot;0&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:&quot;$Vlocity.NULL&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <svgIcon></svgIcon>
+            <svgSprite></svgSprite>
+            <useContinuation>false</useContinuation>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>14.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>DataMapper</omniScriptDefElementName>
+        <propertySetConfig>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{&quot;sendOnlyExtraPayload&quot;:true}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <extraPayload>{&quot;RecordId&quot;:&quot;%ContextId%&quot;}</extraPayload>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel></failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <integrationProcedureKey>BenefitManagement_UpsertRecordsForIndividualApplication</integrationProcedureKey>
+            <label>DataMapper</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <preTransformBundle></preTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteOptions>{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;In Review&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;IAStatus:Status&quot;},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <svgIcon></svgIcon>
+            <svgSprite></svgSprite>
+            <useContinuation>false</useContinuation>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>DeniedApplicationStep</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Not Eligible</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;Denied&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;IAStatus:Status&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>20.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TextBlock6</omniScriptDefElementName>
+        <parentElementName>DeniedApplicationStep</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock6</label>
+            <sanitize>false</sanitize>
+            <text>&lt;p style=&quot;text-align: center;&quot;&gt;The participants aren&amp;rsquo;t eligible to receive a benefit amount.&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>DetermineEligibility</omniScriptDefElementName>
+        <propertySetConfig>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:&quot;&quot;}</errorMessage>
+            <extraPayload>{}</extraPayload>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel></failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <integrationProcedureKey>BenefitManagement_DetermineEligibleBenefitAmount</integrationProcedureKey>
+            <label>DetermineEligibility</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <preTransformBundle></preTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteOptions>{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;},{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Application Accepted&quot;}]}}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <svgIcon></svgIcon>
+            <svgSprite></svgSprite>
+            <useContinuation>false</useContinuation>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>DisplayEligibleBenefitAmount</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>false</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Benefit Eligibility</label>
+            <message>{}</message>
+            <nextLabel>Assign Benefit</nextLabel>
+            <nextWidth>4</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;},{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Application Accepted&quot;}]}},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:&quot;$Vlocity.NULL&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;data&quot;:&quot;0&quot;}]}}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>11.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TextBlock2</omniScriptDefElementName>
+        <parentElementName>DisplayEligibleBenefitAmount</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock2</label>
+            <sanitize>false</sanitize>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;$Vlocity.NULL&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;EligibleBenefitAmount&quot;}]}}</show>
+            <text>&lt;p style=&quot;text-align: center;&quot;&gt;The participants are eligible to recieve the benefit amount&lt;strong&gt; &lt;span style=&quot;color: #2dc26b;&quot;&gt;$ %EligibleBenefitAmount%&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;To view the reasoning behind the eligibility determination, access the decision explainer log from the individual application page.&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>DoesNotQualifyBenefitAmount</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Benefit Eligibility</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&lt;=&quot;,&quot;data&quot;:&quot;0&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;$Vlocity.NULL&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;\&quot;\&quot;&quot;}]}},{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Application Accepted&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>10.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TextBlock3</omniScriptDefElementName>
+        <parentElementName>DoesNotQualifyBenefitAmount</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock3</label>
+            <sanitize>false</sanitize>
+            <text>&lt;p style=&quot;text-align: center;&quot;&gt;The participants aren&amp;rsquo;t eligible to receive a benefit amount.&lt;br /&gt;&lt;br /&gt;To view the reasoning behind the eligibility determination, access the decision explainer log from the individual application page.&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>FetchBenefitAssignment</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSFetchBenefitAssignment1</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;DRId_BenefitAssignment&quot;,&quot;inputParam&quot;:&quot;RecordId&quot;}]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel></failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <ignoreCache>false</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>FetchBenefitAssignment</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode>BenefitAssignmntName</responseJSONNode>
+            <responseJSONPath>BenefitAssignmentName</responseJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;$Vlocity.NULL&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;EligibleBenefitAmount&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;},{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Application Accepted&quot;}]}},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;data&quot;:&quot;0&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>18.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>FetchIAStatus</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSFetchIndividualApplicationStatus1</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;ContextId&quot;,&quot;inputParam&quot;:&quot;ContextId&quot;}]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel></failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <ignoreCache>true</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>Fetch IA Status</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode>IAStatus</responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>FetchIAStatusAgain</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSFetchIndividualApplicationStatus1</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;ContextId&quot;,&quot;inputParam&quot;:&quot;ContextId&quot;}]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel></failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <ignoreCache>true</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>FechIAStatusAgain</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode>IAStatus</responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;In Review&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;IAStatus:Status&quot;},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>FetchRelatedProgram</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSFetchBenefitProgram1</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;ApproveApplication:Benefit&quot;,&quot;inputParam&quot;:&quot;BenefitId&quot;}]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel></failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <ignoreCache>false</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>FetchRelatedProgram</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;},{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Application Accepted&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;data&quot;:&quot;0&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>13.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetIAStatus</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;IndividualApplicationId&quot;:&quot;%ContextId%&quot;,&quot;IndividualApplicationStatus&quot;:&quot;Application Accepted&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>SetIAStatus</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;In Review&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;IAStatus:Status&quot;},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetIAStatusApproved</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;IndividualApplicationStatus&quot;:&quot;Approved&quot;,&quot;IndividualApplicationId&quot;:&quot;%ContextId%&quot;,&quot;BenefitAssignmentDetails&quot;:{&quot;ProgramId&quot;:&quot;%ProgramId%&quot;,&quot;ProgramEnrollmentName&quot;:&quot;%HouseholdName% Enrollment&quot;,&quot;AcccountId&quot;:&quot;%AccountId%&quot;,&quot;BenefitId&quot;:&quot;%ApproveApplication:Benefit%&quot;,&quot;StartDate&quot;:&quot;%ApproveApplication:StartDate%&quot;,&quot;EndDate&quot;:&quot;%ApproveApplication:EndDate%&quot;,&quot;PayoutFrequency&quot;:&quot;%ApproveApplication:PayoutFrequency%&quot;,&quot;EntitlementAmount&quot;:&quot;%ApproveApplication:EntitlementAmount%&quot;,&quot;TotalApprovedAmount&quot;:&quot;%ApproveApplication:TotalApprovedAmount%&quot;,&quot;ParentRecordId&quot;:&quot;%ContextId%&quot;}}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>SetIAStatusApproved</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;$Vlocity.NULL&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;EligibleBenefitAmount&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;},{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Application Accepted&quot;}]}},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;data&quot;:&quot;0&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>15.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetIAStatusDenied</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;IndividualApplicationStatus&quot;:&quot;Denied&quot;,&quot;IndividualApplicationId&quot;:&quot;%ContextId%&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>SetIAStatusDenied</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;Application Accepted&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;IAStatus:Status&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&lt;=&quot;,&quot;data&quot;:&quot;0&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;$Vlocity.NULL&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;\&quot;\&quot;&quot;}]}}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>UpdateIAStatusAccepted</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSUpdateIndividualApplicationStatus1</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel></failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>Update IA Status</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;In Review&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;IAStatus:Status&quot;},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>UpdateIAStatusApproved</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSUpdateIndividualApplicationStatus1</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel></failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>UpdateIAStatusApproved</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;$Vlocity.NULL&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;EligibleBenefitAmount&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;},{&quot;field&quot;:&quot;IAStatus:Status&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Application Accepted&quot;}]}},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;false&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;data&quot;:&quot;0&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>17.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>UpdateIAStatusDenied</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSUpdateIndividualApplicationStatus1</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel></failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>UpdateIAStatusApproved</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;Application Accepted&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;IAStatus:Status&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;&lt;=&quot;,&quot;data&quot;:&quot;0&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;$Vlocity.NULL&quot;},{&quot;field&quot;:&quot;EligibleBenefitAmount&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;\&quot;\&quot;&quot;}]}}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>9.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Warning</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>false</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Warning</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;Approved&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;IAStatus:Status&quot;},{&quot;field&quot;:&quot;IAStatus:IsBAPresent&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;true&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>21.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TextBlock4</omniScriptDefElementName>
+        <parentElementName>Warning</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock4</label>
+            <sanitize>false</sanitize>
+            <text>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Benefit Assignment is already created.&lt;br /&gt;And application processed earlier. Please check&lt;/strong&gt;&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptLanguage>English</omniscriptLanguage>
+    <omniscriptName>Check Eligibility and Assign Benefit</omniscriptName>
+    <propertySetConfig>
+        <allowCancel>true</allowCancel>
+        <allowSaveForLater>true</allowSaveForLater>
+        <autoFocus>false</autoFocus>
+        <autoSaveOnStepNext>false</autoSaveOnStepNext>
+        <bulk>false</bulk>
+        <cancelRedirectPageName>OmniScriptCancelled</cancelRedirectPageName>
+        <cancelRedirectTemplateUrl>vlcCancelled.html</cancelRedirectTemplateUrl>
+        <cancelSource>%ContextId%</cancelSource>
+        <cancelType>SObject</cancelType>
+        <consoleTabIcon>custom:custom18</consoleTabIcon>
+        <consoleTabLabel>New</consoleTabLabel>
+        <currencyCode></currencyCode>
+        <currentLanguage>en_US</currentLanguage>
+        <disableUnloadWarn>true</disableUnloadWarn>
+        <dynamicProperties>{}</dynamicProperties>
+        <elementTypeToHTMLTemplateMapping>{}</elementTypeToHTMLTemplateMapping>
+        <enableKnowledge>false</enableKnowledge>
+        <errorMessage>{&quot;custom&quot;:[]}</errorMessage>
+        <hideStepChart>false</hideStepChart>
+        <knowledgeArticleTypeQueryFieldsMap>{}</knowledgeArticleTypeQueryFieldsMap>
+        <mergeSavedData>false</mergeSavedData>
+        <message>{}</message>
+        <persistentComponent>[{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalSize&quot;:&quot;lg&quot;}},{&quot;render&quot;:false,&quot;dispOutsideOmni&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalController&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;}}]</persistentComponent>
+        <pubsub>false</pubsub>
+        <rtpSeed>false</rtpSeed>
+        <saveContentEncoded>false</saveContentEncoded>
+        <saveForLaterRedirectPageName>sflRedirect</saveForLaterRedirectPageName>
+        <saveForLaterRedirectTemplateUrl>vlcSaveForLaterAcknowledge.html</saveForLaterRedirectTemplateUrl>
+        <saveObjectId>%ContextId%</saveObjectId>
+        <saveURLPatterns>{}</saveURLPatterns>
+        <scrollBehavior>auto</scrollBehavior>
+        <seedDataJSON>{}</seedDataJSON>
+        <showInputWidth>false</showInputWidth>
+        <ssm>false</ssm>
+        <stepChartPlacement>right</stepChartPlacement>
+        <stylesheet>{&quot;newport&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;}</stylesheet>
+        <timeTracking>false</timeTracking>
+        <trackingCustomData>{}</trackingCustomData>
+        <visualforcePagesAvailableInPreview>{}</visualforcePagesAvailableInPreview>
+        <wpm>false</wpm>
+    </propertySetConfig>
+    <references>[{&quot;name&quot;:&quot;BenefitManagement_UpsertRecordsForIndividualApplication_Procedure&quot;,&quot;type&quot;:&quot;IntegrationProcdDefinition&quot;},{&quot;name&quot;:&quot;PSSFetchBenefitAssignment1&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;PSSUpdateIndividualApplicationStatus1&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;BenefitManagement_DetermineEligibleBenefitAmount_Procedure&quot;,&quot;type&quot;:&quot;IntegrationProcdDefinition&quot;},{&quot;name&quot;:&quot;PSSFetchBenefitProgram1&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;PSSCreateBenefitAssignment1&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;BenefitManagement_CreateHousehold_Procedure&quot;,&quot;type&quot;:&quot;IntegrationProcdDefinition&quot;},{&quot;name&quot;:&quot;PSSFetchIndividualApplicationStatus1&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;}]</references>
+    <subType>CheckEligibilityAndAssignBenefit</subType>
+    <type>BenefitManagement</type>
+</OmniscriptDefinition>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniscriptDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Test Deploy Error</description>
+    <isActive>true</isActive>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isOmniscriptReusable>false</isOmniscriptReusable>
+    <masterLabel>CaseProceeding_ServiceRequest_English</masterLabel>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step1</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Step1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptLanguage>English</omniscriptLanguage>
+    <omniscriptName>ROMAOmniScript</omniscriptName>
+    <propertySetConfig>
+        <allowCancel>true</allowCancel>
+        <allowSaveForLater>true</allowSaveForLater>
+        <autoFocus>false</autoFocus>
+        <autoSaveOnStepNext>false</autoSaveOnStepNext>
+        <bulk>false</bulk>
+        <cancelRedirectPageName>OmniScriptCancelled</cancelRedirectPageName>
+        <cancelRedirectTemplateUrl>vlcCancelled.html</cancelRedirectTemplateUrl>
+        <cancelSource>%ContextId%</cancelSource>
+        <cancelType>SObject</cancelType>
+        <consoleTabIcon>custom:custom18</consoleTabIcon>
+        <consoleTabLabel>New</consoleTabLabel>
+        <currencyCode></currencyCode>
+        <currentLanguage>en_US</currentLanguage>
+        <disableUnloadWarn>true</disableUnloadWarn>
+        <dynamicProperties>{}</dynamicProperties>
+        <elementTypeToHTMLTemplateMapping>{}</elementTypeToHTMLTemplateMapping>
+        <enableKnowledge>false</enableKnowledge>
+        <errorMessage>{&quot;custom&quot;:[]}</errorMessage>
+        <hideStepChart>false</hideStepChart>
+        <knowledgeArticleTypeQueryFieldsMap>{}</knowledgeArticleTypeQueryFieldsMap>
+        <mergeSavedData>false</mergeSavedData>
+        <message>{}</message>
+        <persistentComponent>[{&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;label&quot;:&quot;&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalSize&quot;:&quot;lg&quot;},&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteOptions&quot;:{&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;},&quot;remoteTimeout&quot;:30000,&quot;render&quot;:false,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;},{&quot;dispOutsideOmni&quot;:false,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;label&quot;:&quot;&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalController&quot;:&quot;&quot;,&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;},&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteOptions&quot;:{&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;},&quot;remoteTimeout&quot;:30000,&quot;render&quot;:false}]</persistentComponent>
+        <pubsub>false</pubsub>
+        <rtpSeed>false</rtpSeed>
+        <saveContentEncoded>false</saveContentEncoded>
+        <saveForLaterRedirectPageName>sflRedirect</saveForLaterRedirectPageName>
+        <saveForLaterRedirectTemplateUrl>vlcSaveForLaterAcknowledge.html</saveForLaterRedirectTemplateUrl>
+        <saveObjectId>%ContextId%</saveObjectId>
+        <saveURLPatterns>{}</saveURLPatterns>
+        <scrollBehavior>auto</scrollBehavior>
+        <seedDataJSON>{}</seedDataJSON>
+        <showInputWidth>false</showInputWidth>
+        <ssm>false</ssm>
+        <stepChartPlacement>right</stepChartPlacement>
+        <stylesheet>{&quot;lightning&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;,&quot;newport&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;}</stylesheet>
+        <timeTracking>false</timeTracking>
+        <trackingCustomData>{}</trackingCustomData>
+        <visualforcePagesAvailableInPreview>{}</visualforcePagesAvailableInPreview>
+        <wpm>false</wpm>
+    </propertySetConfig>
+    <references>[]</references>
+    <subType>ServiceRequest</subType>
+    <type>CaseProceeding</type>
+</OmniscriptDefinition>

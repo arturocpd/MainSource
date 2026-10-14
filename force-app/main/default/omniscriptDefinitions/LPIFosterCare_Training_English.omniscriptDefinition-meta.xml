@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniscriptDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isActive>true</isActive>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isOmniscriptReusable>false</isOmniscriptReusable>
+    <masterLabel>LPIFosterCare_Training_English</masterLabel>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>DRGetTrainingCourses</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>FCGetTrainingCourses</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <ignoreCache>false</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DRGetTrainingCourses</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>DRCreateCourseParticipant</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>FCCreateCourseParticipant</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DRCreateCourseParticipant</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TextBlock1</omniScriptDefElementName>
+        <parentElementName>Confirmation</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock1</label>
+            <sanitize>false</sanitize>
+            <text>&lt;p&gt;You have successfully registered for:&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Select</omniScriptDefElementName>
+        <propertySetConfig>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <knowledgeOptions>{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000}</knowledgeOptions>
+            <label>Select Training</label>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <validationRequired>true</validationRequired>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>DRGetSelectedCourseDetails</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>FCGetSelectedCourseDetails</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;TrainingOffering&quot;,&quot;inputParam&quot;:&quot;TrainingOffering&quot;}]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <ignoreCache>false</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DRGetSelectedCourseDetails</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TextBlock2</omniScriptDefElementName>
+        <parentElementName>Confirmation</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock2</label>
+            <sanitize>false</sanitize>
+            <text>&lt;p&gt;Course:&amp;nbsp;&lt;strong&gt;%OffName%&lt;/strong&gt;&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TextBlock3</omniScriptDefElementName>
+        <parentElementName>Confirmation</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock3</label>
+            <sanitize>false</sanitize>
+            <text>&lt;p&gt;Date: &lt;strong&gt;%StartDate%&lt;/strong&gt;&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TextBlock5</omniScriptDefElementName>
+        <parentElementName>Confirmation</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock5</label>
+            <sanitize>false</sanitize>
+            <text>&lt;p&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, Oxygen, Ubuntu, Cantarell, &apos;Open Sans&apos;, &apos;Helvetica Neue&apos;, sans-serif;&quot;&gt;Additional information about how to attend or connect to virtual sessions will be provided 72 hours prior to the course.&lt;/span&gt;&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TextBlock4</omniScriptDefElementName>
+        <parentElementName>Confirmation</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock4</label>
+            <sanitize>false</sanitize>
+            <text>&lt;p&gt;Time:&amp;nbsp;&lt;strong&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, Oxygen, Ubuntu, Cantarell, &apos;Open Sans&apos;, &apos;Helvetica Neue&apos;, sans-serif;&quot;&gt;%FormattedStartTime%&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Confirmation</omniScriptDefElementName>
+        <propertySetConfig>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <knowledgeOptions>{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000}</knowledgeOptions>
+            <label>Confirmation</label>
+            <nextLabel>Continue</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>0</previousWidth>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <validationRequired>true</validationRequired>
+        </propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>DRGetDemoData</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>FSGetDemoData</bundle>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;ContextId&quot;,&quot;inputParam&quot;:&quot;userId&quot;}]</dataRaptorInputParameters>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DRGetDemoData</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <showPersistentComponent>[null,null]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TrainingOffering</omniScriptDefElementName>
+        <parentElementName>Select</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;name&quot;:&quot;asset-details&quot;,&quot;source&quot;:&quot;%Offering%&quot;},{&quot;name&quot;:&quot;omniJsonDef&quot;,&quot;source&quot;:&quot;%omniJsonDef%&quot;}]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>TrainingOffering</label>
+            <lwcName>lwcSelectTrainingCourse</lwcName>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>NavigateAction1</omniScriptDefElementName>
+        <propertySetConfig>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <iconName></iconName>
+            <iconPosition>left</iconPosition>
+            <iconVariant></iconVariant>
+            <label>NavigateAction1</label>
+            <loginAction>login</loginAction>
+            <message>{&quot;c__vlocEvents&quot;:&quot;CommunityTracking&quot;}</message>
+            <objectAction>home</objectAction>
+            <pubsub>true</pubsub>
+            <recordAction>view</recordAction>
+            <replace>false</replace>
+            <ssm>false</ssm>
+            <targetFilter>Recent</targetFilter>
+            <targetId>%ContextId%</targetId>
+            <targetLWCLayout>lightning</targetLWCLayout>
+            <targetType>Current Page</targetType>
+            <validationRequired>Submit</validationRequired>
+            <variant>brand</variant>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>Navigate Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptLanguage>English</omniscriptLanguage>
+    <omniscriptName>LPI Foster Care Training Signup</omniscriptName>
+    <propertySetConfig>
+        <allowCancel>true</allowCancel>
+        <allowSaveForLater>false</allowSaveForLater>
+        <autoFocus>false</autoFocus>
+        <autoSaveOnStepNext>false</autoSaveOnStepNext>
+        <bulk>false</bulk>
+        <cancelRedirectPageName>OmniScriptCancelled</cancelRedirectPageName>
+        <cancelRedirectTemplateUrl>vlcCancelled.html</cancelRedirectTemplateUrl>
+        <cancelSource>%ContextId%</cancelSource>
+        <cancelType>SObject</cancelType>
+        <consoleTabIcon>custom:custom18</consoleTabIcon>
+        <consoleTabLabel>New</consoleTabLabel>
+        <currencyCode></currencyCode>
+        <disableUnloadWarn>true</disableUnloadWarn>
+        <dynamicProperties>{}</dynamicProperties>
+        <elementTypeToHTMLTemplateMapping>{}</elementTypeToHTMLTemplateMapping>
+        <enableKnowledge>false</enableKnowledge>
+        <errorMessage>{&quot;custom&quot;:[]}</errorMessage>
+        <hideStepChart>false</hideStepChart>
+        <knowledgeArticleTypeQueryFieldsMap>{}</knowledgeArticleTypeQueryFieldsMap>
+        <message>{}</message>
+        <persistentComponent>[{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalSize&quot;:&quot;lg&quot;}},{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalController&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;}}]</persistentComponent>
+        <pubsub>false</pubsub>
+        <rtpSeed>false</rtpSeed>
+        <saveContentEncoded>false</saveContentEncoded>
+        <saveForLaterRedirectPageName>sflRedirect</saveForLaterRedirectPageName>
+        <saveForLaterRedirectTemplateUrl>vlcSaveForLaterAcknowledge.html</saveForLaterRedirectTemplateUrl>
+        <saveObjectId>%ContextId%</saveObjectId>
+        <saveURLPatterns>{}</saveURLPatterns>
+        <seedDataJSON>{}</seedDataJSON>
+        <showInputWidth>true</showInputWidth>
+        <ssm>false</ssm>
+        <stepChartPlacement>right</stepChartPlacement>
+        <stylesheet>{&quot;newport&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;}</stylesheet>
+        <timeTracking>false</timeTracking>
+        <trackingCustomData>{}</trackingCustomData>
+        <visualforcePagesAvailableInPreview>{}</visualforcePagesAvailableInPreview>
+        <wpm>false</wpm>
+    </propertySetConfig>
+    <references>[{&quot;name&quot;:&quot;lwcSelectTrainingCourse&quot;,&quot;type&quot;:&quot;LightningComponentBundle&quot;},{&quot;name&quot;:&quot;FCGetSelectedCourseDetails&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;FCGetTrainingCourses&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;FCCreateCourseParticipant&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;FSGetDemoData&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;}]</references>
+    <subType>Training</subType>
+    <type>LPIFosterCare</type>
+</OmniscriptDefinition>

@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniscriptDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Omni Test Deploy Issue</description>
+    <isActive>true</isActive>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isOmniscriptReusable>false</isOmniscriptReusable>
+    <masterLabel>Benefits_Application_English</masterLabel>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>StepNumber1.1</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction6</omniScriptDefElementName>
+        <parentElementName>Step5</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>10.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step9</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>11.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction10</omniScriptDefElementName>
+        <parentElementName>Step9</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>12.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step4</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>13.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction5</omniScriptDefElementName>
+        <parentElementName>Step4</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>14.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step3</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>15.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction4</omniScriptDefElementName>
+        <parentElementName>Step3</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>16.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step12</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>17.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction13</omniScriptDefElementName>
+        <parentElementName>Step12</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>18.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step11</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>19.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction1</omniScriptDefElementName>
+        <parentElementName>StepNumber1.1</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction12</omniScriptDefElementName>
+        <parentElementName>Step11</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>20.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step10</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>21.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction11</omniScriptDefElementName>
+        <parentElementName>Step10</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>22.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step8</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>23.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction9</omniScriptDefElementName>
+        <parentElementName>Step8</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>24.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step7</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>25.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction8</omniScriptDefElementName>
+        <parentElementName>Step7</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>26.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step1</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction2</omniScriptDefElementName>
+        <parentElementName>Step1</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step2</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction3</omniScriptDefElementName>
+        <parentElementName>Step2</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step6</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DataMapperPostAction7</omniScriptDefElementName>
+        <parentElementName>Step6</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <bundle>TestDataMapper</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>6</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>DataMapperPostAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Step5</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;This is the description of the step MOD1&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>StepNumber1.1</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>9.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptLanguage>English</omniscriptLanguage>
+    <omniscriptName>Omni Test Deploy Issue</omniscriptName>
+    <propertySetConfig>
+        <allowCancel>true</allowCancel>
+        <allowSaveForLater>true</allowSaveForLater>
+        <autoFocus>false</autoFocus>
+        <autoSaveOnStepNext>false</autoSaveOnStepNext>
+        <bulk>false</bulk>
+        <cancelRedirectPageName>OmniScriptCancelled</cancelRedirectPageName>
+        <cancelRedirectTemplateUrl>vlcCancelled.html</cancelRedirectTemplateUrl>
+        <cancelSource>%ContextId%</cancelSource>
+        <cancelType>SObject</cancelType>
+        <consoleTabIcon>custom:custom18</consoleTabIcon>
+        <consoleTabLabel>New</consoleTabLabel>
+        <currencyCode></currencyCode>
+        <currentLanguage>en_US</currentLanguage>
+        <disableUnloadWarn>true</disableUnloadWarn>
+        <dynamicProperties>{}</dynamicProperties>
+        <elementTypeToHTMLTemplateMapping>{}</elementTypeToHTMLTemplateMapping>
+        <enableKnowledge>false</enableKnowledge>
+        <errorMessage>{&quot;custom&quot;:[]}</errorMessage>
+        <hideStepChart>false</hideStepChart>
+        <knowledgeArticleTypeQueryFieldsMap>{}</knowledgeArticleTypeQueryFieldsMap>
+        <mergeSavedData>false</mergeSavedData>
+        <message>{}</message>
+        <persistentComponent>[{&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;label&quot;:&quot;&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalSize&quot;:&quot;lg&quot;},&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteOptions&quot;:{&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;},&quot;remoteTimeout&quot;:30000,&quot;render&quot;:false,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;},{&quot;dispOutsideOmni&quot;:false,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;label&quot;:&quot;&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalController&quot;:&quot;&quot;,&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;},&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteOptions&quot;:{&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;},&quot;remoteTimeout&quot;:30000,&quot;render&quot;:false}]</persistentComponent>
+        <pubsub>false</pubsub>
+        <rtpSeed>false</rtpSeed>
+        <saveContentEncoded>false</saveContentEncoded>
+        <saveForLaterRedirectPageName>sflRedirect</saveForLaterRedirectPageName>
+        <saveForLaterRedirectTemplateUrl>vlcSaveForLaterAcknowledge.html</saveForLaterRedirectTemplateUrl>
+        <saveObjectId>%ContextId%</saveObjectId>
+        <saveURLPatterns>{}</saveURLPatterns>
+        <scrollBehavior>auto</scrollBehavior>
+        <seedDataJSON>{}</seedDataJSON>
+        <showInputWidth>false</showInputWidth>
+        <ssm>false</ssm>
+        <stepChartPlacement>right</stepChartPlacement>
+        <stylesheet>{&quot;lightning&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;,&quot;newport&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;}</stylesheet>
+        <timeTracking>false</timeTracking>
+        <trackingCustomData>{}</trackingCustomData>
+        <visualforcePagesAvailableInPreview>{}</visualforcePagesAvailableInPreview>
+        <wpm>false</wpm>
+    </propertySetConfig>
+    <references>[{&quot;name&quot;:&quot;TestDataMapper&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;}]</references>
+    <subType>Application</subType>
+    <type>Benefits</type>
+</OmniscriptDefinition>

@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniscriptDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Demonstrates how documents can be genera</description>
+    <isActive>true</isActive>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isOmniscriptReusable>false</isOmniscriptReusable>
+    <masterLabel>docGenerationSample_fndMultiDocxLwc_English</masterLabel>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>InsertSpaceforRepeatingContentTokens</omniScriptDefElementName>
+        <parentElementName>GenerationOptions</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <controllingField>{&quot;type&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;element&quot;:&quot;&quot;}</controllingField>
+            <defaultValue>Yes</defaultValue>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <help>true</help>
+            <helpText>Specifies whether the repeating content tokens output is separated by spaces in a generated document.</helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Insert Space for Repeating Content Tokens</label>
+            <optionSource>{&quot;type&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;}</optionSource>
+            <options>[{&quot;name&quot;:&quot;Yes&quot;,&quot;value&quot;:&quot;Yes&quot;,&quot;autoAdv&quot;:null},{&quot;name&quot;:&quot;No&quot;,&quot;value&quot;:&quot;No&quot;,&quot;autoAdv&quot;:null}]</options>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>false</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Select</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DocumentTitle</omniScriptDefElementName>
+        <parentElementName>GenerationOptions</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <debounceValue>0</debounceValue>
+            <defaultValue>TestDocumentTitle</defaultValue>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;helpTextPos&quot;:&quot;&quot;,&quot;autocomplete&quot;:null}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Document Title</label>
+            <mask></mask>
+            <maxLength>255</maxLength>
+            <minLength>0</minLength>
+            <pattern></pattern>
+            <placeholder></placeholder>
+            <ptrnErrText></ptrnErrText>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>false</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>Text</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>ObjectId</omniScriptDefElementName>
+        <parentElementName>EnterObject</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <debounceValue>0</debounceValue>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>ObjectId</label>
+            <mask></mask>
+            <maxLength>255</maxLength>
+            <minLength>0</minLength>
+            <pattern></pattern>
+            <placeholder></placeholder>
+            <ptrnErrText></ptrnErrText>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>true</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Text</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>GetDocumentTemplates</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>DocGenSampleExtractDocumentTemplatesLWC</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;TemplateType&quot;,&quot;inputParam&quot;:&quot;templateType&quot;}]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <ignoreCache>false</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>Get Document Templates</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>GenerateDocumentWord</omniScriptDefElementName>
+        <parentElementName>GenerateDocument</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;name&quot;:&quot;context-id&quot;,&quot;source&quot;:&quot;%EnterObject:ObjectId%&quot;},{&quot;name&quot;:&quot;debug&quot;,&quot;source&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;document-title&quot;,&quot;source&quot;:&quot;%GenerationOptions:DocumentTitle%&quot;},{&quot;name&quot;:&quot;selected-document-template&quot;,&quot;source&quot;:&quot;%ArrangeSelectedTemplates:ReorderSelectedTemplate%&quot;}]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>GenerateDocumentWord</label>
+            <lwcName>omnistudio__clmOsMultiDocxGenerateDocument</lwcName>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DocumentGenerationFontSource</omniScriptDefElementName>
+        <parentElementName>GenerationOptions</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <controllingField>{&quot;element&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;}</controllingField>
+            <defaultValue>Rich Text Editor Font</defaultValue>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;helpTextPos&quot;:&quot;&quot;}</dynamicProperties>
+            <help>true</help>
+            <helpText>Specifies the source of the font used for rendering values during document generation. Possible values include Rich Text Editor Font, Document Font. The default value is Rich Text Editor Font.</helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Document Generation Font Source</label>
+            <optionSource>{&quot;type&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;}</optionSource>
+            <options>[{&quot;name&quot;:&quot;Rich Text Editor Font&quot;,&quot;value&quot;:&quot;Rich Text Editor Font&quot;,&quot;autoAdv&quot;:null},{&quot;name&quot;:&quot;Document Font&quot;,&quot;value&quot;:&quot;Document Font&quot;,&quot;autoAdv&quot;:null}]</options>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>false</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Select</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>GeneratePdfMergeDocument</omniScriptDefElementName>
+        <parentElementName>GenerateMergeDocument</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;name&quot;:&quot;context-id&quot;,&quot;source&quot;:&quot;%EnterObject:ObjectId%&quot;},{&quot;name&quot;:&quot;pdf-content-version-ids&quot;,&quot;source&quot;:&quot;%pdfContentVersionIds%&quot;}]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>Generate Pdf Merge Document</label>
+            <lwcName>omnistudio__clmOsGeneratePdfMergeDocument</lwcName>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>ArrangeSelectedTemplates</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Arrange templates</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>TemplateType</omniScriptDefElementName>
+        <parentElementName>EnterObject</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <controllingField>{&quot;element&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;}</controllingField>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Template Type</label>
+            <optionSource>{&quot;source&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;}</optionSource>
+            <options>[{&quot;name&quot;:&quot;MicrosoftWord&quot;,&quot;value&quot;:&quot;Microsoft Word .DOCX Template&quot;,&quot;autoAdv&quot;:null},{&quot;name&quot;:&quot;MicrosoftPowerpoint&quot;,&quot;value&quot;:&quot;Microsoft Powerpoint .PPTX Template&quot;,&quot;autoAdv&quot;:null}]</options>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>true</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Select</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>GenerationOptions</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Generation Options</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>EnterObject</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Enter Object Id</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>Set Generation Options</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;attachFileFormat&quot;:&quot;=%GenerationOptions:AttachFileFormat%&quot;,&quot;docGenerationMechanism&quot;:&quot;=%GenerationOptions:DocGenerationMechanism%&quot;,&quot;documentViewer&quot;:&quot;=%GenerationOptions:DocumentViewer%&quot;,&quot;downloadFileFormat&quot;:&quot;=%GenerationOptions:DownloadFileFormat%&quot;,&quot;pdfGenerationSource&quot;:&quot;=%GenerationOptions:PdfGenerationSource%&quot;,&quot;documentGenerationFontSource&quot;:&quot;=%GenerationOptions:DocumentGenerationFontSource%&quot;,&quot;insertSpaceforRepeatingContentTokens&quot;:&quot;=%GenerationOptions:InsertSpaceforRepeatingContentTokens%&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>AttachFileFormat</omniScriptDefElementName>
+        <parentElementName>GenerationOptions</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <controllingField>{&quot;element&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;}</controllingField>
+            <defaultValue>docx</defaultValue>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Attach File Format</label>
+            <optionSource>{&quot;source&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;}</optionSource>
+            <options>[{&quot;autoAdv&quot;:null,&quot;name&quot;:&quot;docx&quot;,&quot;value&quot;:&quot;Microsoft Word&quot;},{&quot;autoAdv&quot;:null,&quot;name&quot;:&quot;pptx&quot;,&quot;value&quot;:&quot;Microsoft PowerPoint&quot;},{&quot;autoAdv&quot;:null,&quot;name&quot;:&quot;pdf&quot;,&quot;value&quot;:&quot;PDF&quot;},{&quot;autoAdv&quot;:null,&quot;name&quot;:&quot;docx,pdf&quot;,&quot;value&quot;:&quot;Word, PDF&quot;},{&quot;autoAdv&quot;:null,&quot;name&quot;:&quot;pptx,pdf&quot;,&quot;value&quot;:&quot;PowerPoint, PDF&quot;},{&quot;autoAdv&quot;:null,&quot;name&quot;:&quot;none&quot;,&quot;value&quot;:&quot;None&quot;}]</options>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>false</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Select</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DocGenerationMechanism</omniScriptDefElementName>
+        <parentElementName>GenerationOptions</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <controllingField>{&quot;element&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;}</controllingField>
+            <defaultValue>ClientSide</defaultValue>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <help>false</help>
+            <helpText>VlocityCloud option requires active subscription to the Vlocity Cloud service (BETA)</helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Doc Generation Mechanism</label>
+            <optionSource>{&quot;source&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;}</optionSource>
+            <options>[{&quot;name&quot;:&quot;ClientSide&quot;,&quot;value&quot;:&quot;ClientSide&quot;,&quot;autoAdv&quot;:null}]</options>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>false</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Select</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DownloadFileFormat</omniScriptDefElementName>
+        <parentElementName>GenerationOptions</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <controllingField>{&quot;element&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;}</controllingField>
+            <defaultValue>all</defaultValue>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Download File Format</label>
+            <optionSource>{&quot;source&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;}</optionSource>
+            <options>[{&quot;autoAdv&quot;:null,&quot;name&quot;:&quot;all&quot;,&quot;value&quot;:&quot;All&quot;},{&quot;autoAdv&quot;:null,&quot;name&quot;:&quot;docx&quot;,&quot;value&quot;:&quot;Microsoft Word&quot;},{&quot;autoAdv&quot;:null,&quot;name&quot;:&quot;pptx&quot;,&quot;value&quot;:&quot;Microsoft PowerPoint&quot;},{&quot;autoAdv&quot;:null,&quot;name&quot;:&quot;pdf&quot;,&quot;value&quot;:&quot;PDF&quot;},{&quot;autoAdv&quot;:null,&quot;name&quot;:&quot;none&quot;,&quot;value&quot;:&quot;None&quot;}]</options>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>false</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Select</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>DocumentViewer</omniScriptDefElementName>
+        <parentElementName>GenerationOptions</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <controllingField>{&quot;element&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;}</controllingField>
+            <defaultValue>PDF</defaultValue>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <help>false</help>
+            <helpText></helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Document Viewer</label>
+            <optionSource>{&quot;source&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;}</optionSource>
+            <options>[{&quot;name&quot;:&quot;PDF&quot;,&quot;value&quot;:&quot;PDF&quot;,&quot;autoAdv&quot;:null},{&quot;name&quot;:&quot;none&quot;,&quot;value&quot;:&quot;None&quot;,&quot;autoAdv&quot;:null}]</options>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <required>false</required>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Select</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>SelectTemplate</omniScriptDefElementName>
+        <parentElementName>PickTemplate</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;name&quot;:&quot;template-list&quot;,&quot;source&quot;:&quot;%DocumentTemplate%&quot;},{&quot;name&quot;:&quot;clear-state-on-change&quot;,&quot;source&quot;:&quot;[\&quot;DocumentGenerationWordLWC\&quot;]&quot;},{&quot;name&quot;:&quot;multi-document-generation&quot;,&quot;source&quot;:&quot;true&quot;}]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>SelectTemplate</label>
+            <lwcName>omnistudio__clmSelectableItems</lwcName>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>GenerateMergeDocument</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Generate Merge Document</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>0</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;condition&quot;:&quot;&gt;=&quot;,&quot;data&quot;:&quot;2&quot;,&quot;field&quot;:&quot;CountTemplateSelected&quot;},{&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;true&quot;,&quot;field&quot;:&quot;generatePdfDocument&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetValues</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;selectedTemplate&quot;:&quot;=%PickTemplate:SelectTemplate%&quot;,&quot;templateType&quot;:&quot;=%TemplateType%&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>GenerateDocument</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Generate Document(s)</label>
+            <message>{}</message>
+            <nextLabel>Merge PDF Documents</nextLabel>
+            <nextWidth>5</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>0</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>PickTemplate</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>true</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction>&lt;p&gt;Select one or more document templates&lt;/p&gt;</instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Pick template(s)</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[false,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>ReorderSelectedTemplate</omniScriptDefElementName>
+        <parentElementName>ArrangeSelectedTemplates</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;name&quot;:&quot;selected-template&quot;,&quot;source&quot;:&quot;%selectedTemplate%&quot;}]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>ReorderSelectedTemplate</label>
+            <lwcName>omnistudio__clmOsArrangeSelectedTemplateList</lwcName>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptLanguage>English</omniscriptLanguage>
+    <omniscriptName>Multi Doc - DOCX (LWC)</omniscriptName>
+    <propertySetConfig>
+        <allowCancel>true</allowCancel>
+        <allowSaveForLater>true</allowSaveForLater>
+        <autoFocus>false</autoFocus>
+        <autoSaveOnStepNext>false</autoSaveOnStepNext>
+        <bulk>false</bulk>
+        <cancelRedirectPageName>OmniScriptCancelled</cancelRedirectPageName>
+        <cancelRedirectTemplateUrl>vlcCancelled.html</cancelRedirectTemplateUrl>
+        <cancelSource>%ContextId%</cancelSource>
+        <cancelType>SObject</cancelType>
+        <consoleTabIcon>custom:custom18</consoleTabIcon>
+        <consoleTabLabel>New</consoleTabLabel>
+        <currencyCode></currencyCode>
+        <currentLanguage>en_US</currentLanguage>
+        <disableUnloadWarn>true</disableUnloadWarn>
+        <dynamicProperties>{}</dynamicProperties>
+        <elementTypeToHTMLTemplateMapping>{}</elementTypeToHTMLTemplateMapping>
+        <enableKnowledge>false</enableKnowledge>
+        <errorMessage>{&quot;custom&quot;:[]}</errorMessage>
+        <hideStepChart>false</hideStepChart>
+        <knowledgeArticleTypeQueryFieldsMap>{}</knowledgeArticleTypeQueryFieldsMap>
+        <mergeSavedData>false</mergeSavedData>
+        <message>{}</message>
+        <persistentComponent>[{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalSize&quot;:&quot;lg&quot;}},{&quot;render&quot;:false,&quot;dispOutsideOmni&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalController&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;}}]</persistentComponent>
+        <pubsub>false</pubsub>
+        <rtpSeed>false</rtpSeed>
+        <saveContentEncoded>false</saveContentEncoded>
+        <saveForLaterRedirectPageName>sflRedirect</saveForLaterRedirectPageName>
+        <saveForLaterRedirectTemplateUrl>vlcSaveForLaterAcknowledge.html</saveForLaterRedirectTemplateUrl>
+        <saveObjectId>%ContextId%</saveObjectId>
+        <saveURLPatterns>{}</saveURLPatterns>
+        <scrollBehavior>auto</scrollBehavior>
+        <seedDataJSON>{}</seedDataJSON>
+        <showInputWidth>false</showInputWidth>
+        <ssm>false</ssm>
+        <stepChartPlacement>right</stepChartPlacement>
+        <stylesheet>{&quot;newport&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;}</stylesheet>
+        <timeTracking>false</timeTracking>
+        <trackingCustomData>{}</trackingCustomData>
+        <visualforcePagesAvailableInPreview>{}</visualforcePagesAvailableInPreview>
+        <wpm>false</wpm>
+    </propertySetConfig>
+    <references>[{&quot;name&quot;:&quot;DocGenSampleExtractDocumentTemplatesLWC&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;}]</references>
+    <subType>fndMultiDocxLwc</subType>
+    <type>docGenerationSample</type>
+</OmniscriptDefinition>
