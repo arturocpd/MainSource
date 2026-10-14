@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniscriptDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Helps users initiate a change in income,</description>
+    <isActive>true</isActive>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isOmniscriptReusable>false</isOmniscriptReusable>
+    <masterLabel>ChangeOfCircumstances_ReportChangeOfCircumstances_English</masterLabel>
+    <omniscriptDefinitionElement>
+        <embeddedOmniscriptKey>ChangeOfCircumstances|ApplicationSubmissionConfirmation|English</embeddedOmniscriptKey>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>ApplicationSubmissionConfirmation</omniScriptDefElementName>
+        <propertySetConfig>
+            <dynamicProperties>{&quot;Type&quot;:&quot;ChangeOfCircumstances&quot;,&quot;Sub Type&quot;:&quot;ApplicationSubmissionConfirmation&quot;,&quot;Language&quot;:&quot;English&quot;}</dynamicProperties>
+        </propertySetConfig>
+        <sequenceNumber>28.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>BenefitApplicationSubmission</omniScriptDefElementName>
+        <propertySetConfig>
+            <attachmentName>Benefit Application by %HouseholdInformation:PSS_BM_v5_HouseholdMemberDetails:PSS_BM_v5_HouseholdMemberLastName% %IndividualApplicationName%</attachmentName>
+            <attachmentParentId>%IndividualApplicationId%</attachmentParentId>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dateFormat></dateFormat>
+            <dateTimeFormat></dateTimeFormat>
+            <displayHeight>700</displayHeight>
+            <displayWidth>600</displayWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>Benefit Application Submitted</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <preTransformBundle>PSSExpCloudMapBenefitAssessmentResponseToPDF1</preTransformBundle>
+            <pubsub>false</pubsub>
+            <readOnly>false</readOnly>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcPDF.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;IsApplicationSubmitted&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;WasApplicationReturned&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;true&quot;},{&quot;field&quot;:&quot;IsReturnedApplicationSubmitted&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:&quot;true&quot;},{&quot;field&quot;:&quot;IndividualApplicationStatus&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;},{&quot;field&quot;:&quot;UserType&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;PowerCustomerSuccess&quot;}]}},{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IsEditByCaseWorkerAllowed&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;true&quot;},{&quot;field&quot;:&quot;IsApplicationEdited&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:&quot;true&quot;}]}}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <showPopup>false</showPopup>
+            <ssm>false</ssm>
+            <templateName>LiheapApplicationWithPeriodicIncomeDetails_pdf</templateName>
+            <timeFormat></timeFormat>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>24.0</sequenceNumber>
+        <type>PDF Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>ChangeOfCircumstancesApplicationReview</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>false</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel>Cancel</cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <chartLabel>Application Review</chartLabel>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Application Review</label>
+            <message>{}</message>
+            <nextLabel>Next</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel>Previous</previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;IsApplicationSubmitted&quot;},{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;WasApplicationReturned&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;true&quot;},{&quot;field&quot;:&quot;IsReturnedApplicationSubmitted&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:&quot;true&quot;},{&quot;field&quot;:&quot;IndividualApplicationStatus&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;},{&quot;field&quot;:&quot;UserType&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;PowerCustomerSuccess&quot;}]}},{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IsEditByCaseWorkerAllowed&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;true&quot;},{&quot;field&quot;:&quot;IsApplicationEdited&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:&quot;true&quot;}]}}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>20.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>COCHouseholdMemberDetails</omniScriptDefElementName>
+        <parentElementName>ChangeOfCircumstancesApplicationReview</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <collapse>false</collapse>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <headingLevel>1</headingLevel>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Household member details</label>
+            <lwcComponentOverride></lwcComponentOverride>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;ChangeOfCircumstancesReportAChange:PSS_BM_v5_ChangeOfCircumstancesReportChangeMember&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>2.0</level>
+        <omniScriptDefElementName>COCCurrentHouseholdMemberDetailsCard</omniScriptDefElementName>
+        <parentElementName>COCHouseholdMemberDetails</parentElementName>
+        <parentElementType>Block</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;name&quot;:&quot;parent-data&quot;,&quot;source&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;records&quot;,&quot;source&quot;:&quot;%PSS_BM_CurrentHouseholdMemberDetails%&quot;}]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>Current household details</label>
+            <lwcName>cfPSSCoCShowCurrentHouseholdDetails</lwcName>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:null,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;PSS_BM_CurrentHouseholdMemberDetails&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>2.0</level>
+        <omniScriptDefElementName>CoCShowCurrentHouseholdDetailsEmptyState</omniScriptDefElementName>
+        <parentElementName>COCHouseholdMemberDetails</parentElementName>
+        <parentElementType>Block</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>CoCShowCurrentHouseholdDetailsEmptyState</label>
+            <lwcName>cfPSSCoCShowCurrentHouseholdDetailsEmptyState</lwcName>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:null,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;PSS_BM_CurrentHouseholdMemberDetails&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>2.0</level>
+        <omniScriptDefElementName>COCUpdateHouseholdMemberDetailsCard</omniScriptDefElementName>
+        <parentElementName>COCHouseholdMemberDetails</parentElementName>
+        <parentElementType>Block</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;name&quot;:&quot;parent-data&quot;,&quot;source&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;records&quot;,&quot;source&quot;:&quot;%HouseholdInformation:PSS_BM_v5_HouseholdMemberDetails%&quot;}]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>Updated household details</label>
+            <lwcName>cfPSSCoCShowUpdatedHouseholdDetails</lwcName>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:null,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;HouseholdInformation:PSS_BM_v5_HouseholdMemberDetails&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>2.0</level>
+        <omniScriptDefElementName>ShowRemovedHouseholdDetails</omniScriptDefElementName>
+        <parentElementName>COCHouseholdMemberDetails</parentElementName>
+        <parentElementType>Block</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;source&quot;:&quot;true&quot;,&quot;name&quot;:&quot;parent-data&quot;},{&quot;source&quot;:&quot;%HouseholdInformation:PSS_BM_v5_HouseholdMemberDetails%&quot;,&quot;name&quot;:&quot;records&quot;}]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>ShowRemovedHouseholdDetails</label>
+            <lwcName>cfPSSCoCShowRemovedHouseholdDetails</lwcName>
+            <show>{&quot;group&quot;:{&quot;rules&quot;:[{&quot;field&quot;:&quot;HouseholdInformation:PSS_BM_v5_HouseholdMemberDetails&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:null}],&quot;operator&quot;:&quot;AND&quot;}}</show>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>2.0</level>
+        <omniScriptDefElementName>ShowUpdatedHouseholdDetailsEmptyState</omniScriptDefElementName>
+        <parentElementName>COCHouseholdMemberDetails</parentElementName>
+        <parentElementType>Block</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>ShowUpdatedHouseholdDetailsEmptyState</label>
+            <lwcName>cfPSSCoCShowUpdatedHouseholdDetailsEmptyState</lwcName>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:null,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;HouseholdInformation:PSS_BM_v5_HouseholdMemberDetails&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>COCReviewIncomeDetails</omniScriptDefElementName>
+        <parentElementName>ChangeOfCircumstancesApplicationReview</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <collapse>false</collapse>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Income</label>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;ChangeOfCircumstancesReportAChange:PSS_BM_v5_ChangeOfCircumstancesReportChangeIncome&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>2.0</level>
+        <omniScriptDefElementName>COCCurrentIncomeMemberDetailsCard</omniScriptDefElementName>
+        <parentElementName>COCReviewIncomeDetails</parentElementName>
+        <parentElementType>Block</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;name&quot;:&quot;parent-data&quot;,&quot;source&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;records&quot;,&quot;source&quot;:&quot;%PSS_BM_v5_HouseholdIncomeDetails%&quot;}]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>Current Income Information</label>
+            <lwcName>cfPSSCoCShowCurrentHouseholdIncomeDetails</lwcName>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:null,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;Income:PSS_BM_v5_ExistingHouseholdIncomeDetails&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>2.0</level>
+        <omniScriptDefElementName>CoCShowCurrentHouseholdIncomeDetailsEmptyState</omniScriptDefElementName>
+        <parentElementName>COCReviewIncomeDetails</parentElementName>
+        <parentElementType>Block</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>CoCShowCurrentHouseholdIncomeDetailsEmptyState</label>
+            <lwcName>cfPSSCoCShowCurrentHouseholdIncomeDetailsEmptyState</lwcName>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:null,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;Income:PSS_BM_v5_ExistingHouseholdIncomeDetails&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>2.0</level>
+        <omniScriptDefElementName>CoCShowRemovedHouseholdIncomeDetails</omniScriptDefElementName>
+        <parentElementName>COCReviewIncomeDetails</parentElementName>
+        <parentElementType>Block</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;name&quot;:&quot;parent-data&quot;,&quot;source&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;records&quot;,&quot;source&quot;:&quot;%Income:PSS_BM_v5_ExistingHouseholdIncomeDetails%&quot;}]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>CoCShowRemovedHouseholdIncomeDetails</label>
+            <lwcName>cfPSSCoCShowRemovedHouseholdIncomeDetails</lwcName>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:null,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;Income:PSS_BM_v5_ExistingHouseholdIncomeDetails&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>2.0</level>
+        <omniScriptDefElementName>CoCShowUpdatedHouseholdIncomeDetailsEmptyState</omniScriptDefElementName>
+        <parentElementName>COCReviewIncomeDetails</parentElementName>
+        <parentElementType>Block</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>CoCShowUpdatedHouseholdIncomeDetailsEmptyState</label>
+            <lwcName>cfPSSCoCShowUpdatedHouseholdIncomeDetailsEmptyState</lwcName>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:null,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;Income:PSS_BM_v5_ExistingHouseholdIncomeDetails&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>2.0</level>
+        <omniScriptDefElementName>COCUpdatedIncomeMemberDetailsCard</omniScriptDefElementName>
+        <parentElementName>COCReviewIncomeDetails</parentElementName>
+        <parentElementType>Block</parentElementType>
+        <propertySetConfig>
+            <BStandalone>false</BStandalone>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <customAttributes>[{&quot;name&quot;:&quot;parent-data&quot;,&quot;source&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;records&quot;,&quot;source&quot;:&quot;%Income:PSS_BM_v5_ExistingHouseholdIncomeDetails%&quot;}]</customAttributes>
+            <dynamicProperties>{}</dynamicProperties>
+            <hide>false</hide>
+            <label>Updated Income Details</label>
+            <lwcName>cfPSSCoCShowUpdatedHouseholdIncomeDetails</lwcName>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:null,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;Income:PSS_BM_v5_ExistingHouseholdIncomeDetails&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Custom Lightning Web Component</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>false</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>ChangeOfCircumstancesReportAChange</omniScriptDefElementName>
+        <propertySetConfig>
+            <allowSaveForLater>false</allowSaveForLater>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <cancelLabel></cancelLabel>
+            <cancelMessage>Are you sure?</cancelMessage>
+            <chartLabel>Select Category</chartLabel>
+            <completeLabel>Complete</completeLabel>
+            <completeMessage>Are you sure you want to complete the script?</completeMessage>
+            <conditionType>Hide if False</conditionType>
+            <dynamicProperties>{}</dynamicProperties>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <htmlTemplateId></htmlTemplateId>
+            <instruction></instruction>
+            <instructionKey></instructionKey>
+            <knowledgeOptions>{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;}</knowledgeOptions>
+            <label>Report a change</label>
+            <message>{}</message>
+            <nextLabel>Submit</nextLabel>
+            <nextWidth>3</nextWidth>
+            <previousLabel></previousLabel>
+            <previousWidth>3</previousWidth>
+            <pubsub>false</pubsub>
+            <remoteClass></remoteClass>
+            <remoteMethod></remoteMethod>
+            <remoteOptions>{}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <saveLabel>Save for later</saveLabel>
+            <saveMessage>Are you sure you want to save it for later?</saveMessage>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>true</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>Step</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>COCChangeInHouseholdMember</omniScriptDefElementName>
+        <parentElementName>ChangeOfCircumstancesReportAChange</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <checkLabel>Change in household member details</checkLabel>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <defaultValue>false</defaultValue>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;helpTextPos&quot;:&quot;bottom-right&quot;}</dynamicProperties>
+            <help>true</help>
+            <helpText>Change in household member details</helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Checkbox1</label>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Checkbox</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>COCChangeInIncome</omniScriptDefElementName>
+        <parentElementName>ChangeOfCircumstancesReportAChange</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <accessibleInFutureSteps>false</accessibleInFutureSteps>
+            <checkLabel>Change in income</checkLabel>
+            <conditionType>Hide if False</conditionType>
+            <controlWidth>12</controlWidth>
+            <defaultValue>false</defaultValue>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;helpTextPos&quot;:&quot;bottom-right&quot;}</dynamicProperties>
+            <help>true</help>
+            <helpText>Change in income</helpText>
+            <hide>false</hide>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Checkbox1</label>
+            <readOnly>false</readOnly>
+            <repeat>false</repeat>
+            <repeatClone>false</repeatClone>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Checkbox</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>COCReportAChangeIsEdited</omniScriptDefElementName>
+        <parentElementName>ChangeOfCircumstancesReportAChange</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataType>Boolean</dataType>
+            <dateFormat>MM-dd-yyyy</dateFormat>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{}</dynamicProperties>
+            <expression>%IsReportChangeSelectionPageEdited%</expression>
+            <hide>true</hide>
+            <hideGroupSep>false</hideGroupSep>
+            <htmlTemplateId></htmlTemplateId>
+            <inputWidth>12</inputWidth>
+            <label>Is Edited?</label>
+            <showInputWidth>false</showInputWidth>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Formula</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>COCReportAChangeLineBreak1</omniScriptDefElementName>
+        <parentElementName>ChangeOfCircumstancesReportAChange</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>LineBreak1</label>
+            <padding>30</padding>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Line Break</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>1.0</level>
+        <omniScriptDefElementName>COCSelectCategory</omniScriptDefElementName>
+        <parentElementName>ChangeOfCircumstancesReportAChange</parentElementName>
+        <parentElementType>Step</parentElementType>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dataJSON>false</dataJSON>
+            <dynamicProperties>{}</dynamicProperties>
+            <htmlTemplateId></htmlTemplateId>
+            <label>TextBlock1</label>
+            <sanitize>false</sanitize>
+            <text>&lt;p&gt;Select a category to submit change report&lt;/p&gt;</text>
+            <textKey></textKey>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Text Block</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <embeddedOmniscriptKey>ChangeOfCircumstances|ReportChangeType|English</embeddedOmniscriptKey>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>ChangeOfCircumstancesReportChangeType</omniScriptDefElementName>
+        <propertySetConfig>
+            <dynamicProperties>{&quot;Type&quot;:&quot;ChangeOfCircumstances&quot;,&quot;Sub Type&quot;:&quot;ReportChangeType&quot;,&quot;Language&quot;:&quot;English&quot;}</dynamicProperties>
+        </propertySetConfig>
+        <sequenceNumber>9.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>COCModifyReturnedIndividualApplication</omniScriptDefElementName>
+        <propertySetConfig>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <extraPayload>{}</extraPayload>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <integrationProcedureKey>ChangeOfCircumstances_ModifyReturnedIndividualApplication</integrationProcedureKey>
+            <label>Modify Returned Individual Application</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <preTransformBundle></preTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteOptions>{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;WasApplicationReturned&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;true&quot;},{&quot;field&quot;:&quot;IsReturnedApplicationSubmitted&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:&quot;true&quot;},{&quot;field&quot;:&quot;IndividualApplicationStatus&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;In Review&quot;},{&quot;field&quot;:&quot;UserType&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;PowerCustomerSuccess&quot;}]}},{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;IsApplicationEdited&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:&quot;true&quot;},{&quot;field&quot;:&quot;IsEditByCaseWorkerAllowed&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;true&quot;}]}}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <svgIcon></svgIcon>
+            <svgSprite></svgSprite>
+            <useContinuation>false</useContinuation>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>23.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>CreatePreliminaryApplicationReference</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSReportChangeCreatePARFromAssessment1</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>Create Preliminary Application Reference</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;IsApplicationSubmitted&quot;},{&quot;field&quot;:&quot;DoesPreliminaryApplicationReferenceExist&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:&quot;true&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Submit</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>15.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>CreateIndividualApplicationAndRelatedRecords</omniScriptDefElementName>
+        <propertySetConfig>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <extraPayload>{}</extraPayload>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <integrationProcedureKey>ChangeOfCircumstances_CreateIndividualApplicationAndRelatedRecords</integrationProcedureKey>
+            <label>Create Individual Application and Related Records</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <preTransformBundle></preTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteOptions>{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;IsApplicationSubmitted&quot;},{&quot;field&quot;:&quot;WasApplicationReturned&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:&quot;true&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <svgIcon></svgIcon>
+            <svgSprite></svgSprite>
+            <useContinuation>false</useContinuation>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>22.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>DoesPreliminaryApplicationReferenceExist</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;DoesPreliminaryApplicationReferenceExist&quot;:true,&quot;DRId_PreliminaryApplicationRef&quot;:&quot;%DRId_PreliminaryApplicationRef%&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Does a preliminary application reference exist?</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;IsApplicationSubmitted&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>16.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>FetchIfIndividualApplicationWasReturned</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSFetchReturnedToApplicantStatus3</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;DRId_PreliminaryApplicationRef&quot;,&quot;inputParam&quot;:&quot;DRId_PreliminaryApplicationRef&quot;}]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <ignoreCache>true</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>Fetch If Individual Application Was Returned</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode>ReturnedIndividualApplicationStatus</responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;DoesPreliminaryApplicationReferenceExist&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>FetchIndividualApplicationStatus</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSFetchIndividualApplicationStatus1</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;IndividualApplicationId&quot;,&quot;inputParam&quot;:&quot;ContextId&quot;}]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <ignoreCache>false</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>Fetch Individual Application Status</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode>IAStatusData</responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;DoesPreliminaryApplicationReferenceExist&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>FetchUserType</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSCheckUserType3</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;userId&quot;,&quot;inputParam&quot;:&quot;userId&quot;}]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <ignoreCache>false</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>Fetch User Type</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;DoesPreliminaryApplicationReferenceExist&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>DataRaptor Turbo Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>GetUserPersonAccountId</omniScriptDefElementName>
+        <propertySetConfig>
+            <bundle>PSSExpCloudGetPersonAccountIDOfApplicant1</bundle>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;userId&quot;,&quot;inputParam&quot;:&quot;userId&quot;}]</dataRaptorInputParameters>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <ignoreCache>false</ignoreCache>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <label>GetUserPersonAccountId</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <pubsub>false</pubsub>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;IsApplicationSubmitted&quot;},{&quot;field&quot;:&quot;DoesPreliminaryApplicationReferenceExist&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;data&quot;:&quot;true&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>13.0</sequenceNumber>
+        <type>DataRaptor Turbo Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>IntegrationProcedureAction1</omniScriptDefElementName>
+        <propertySetConfig>
+            <businessCategory></businessCategory>
+            <businessEvent></businessEvent>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <enableActionMessage>false</enableActionMessage>
+            <enableDefaultAbort>false</enableDefaultAbort>
+            <errorMessage>{&quot;custom&quot;:[],&quot;default&quot;:null}</errorMessage>
+            <extraPayload>{}</extraPayload>
+            <failureAbortLabel>Abort</failureAbortLabel>
+            <failureAbortMessage>Are you sure?</failureAbortMessage>
+            <failureGoBackLabel>Go Back</failureGoBackLabel>
+            <failureNextLabel>Continue</failureNextLabel>
+            <htmlTemplateId></htmlTemplateId>
+            <inProgressMessage>In Progress</inProgressMessage>
+            <integrationProcedureKey>ChangeOfCircumstances_GetHouseHoldMemberDetailsByHeadOfHouseholdId</integrationProcedureKey>
+            <label>IntegrationProcedureAction1</label>
+            <message>{}</message>
+            <postMessage>Done</postMessage>
+            <postTransformBundle></postTransformBundle>
+            <preTransformBundle></preTransformBundle>
+            <pubsub>false</pubsub>
+            <redirectNextLabel>Next</redirectNextLabel>
+            <redirectNextWidth>3</redirectNextWidth>
+            <redirectPageName></redirectPageName>
+            <redirectPreviousLabel>Previous</redirectPreviousLabel>
+            <redirectPreviousWidth>3</redirectPreviousWidth>
+            <redirectTemplateUrl>vlcAcknowledge.html</redirectTemplateUrl>
+            <remoteOptions>{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false}</remoteOptions>
+            <remoteTimeout>30000</remoteTimeout>
+            <responseJSONNode>HouseholdInformationReview</responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;&lt;&gt;&quot;,&quot;field&quot;:&quot;ChangeOfCircumstancesReportAChange:PSS_BM_v5_ChangeOfCircumstancesReportChangeMember&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <svgIcon></svgIcon>
+            <svgSprite></svgSprite>
+            <useContinuation>false</useContinuation>
+            <validationRequired>Step</validationRequired>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>11.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>false</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>IsReportChangeSelectionPageEdited</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;IsReportChangeSelectionPageEdited&quot;:true}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Is report change selection page edited?</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>10.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetCommunityUserId</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;UserId&quot;:&quot;%userId%&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Set Community User Id</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;UserId&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetEditApplicationStatus</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;IsApplicationEdited&quot;:true}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Set Edit Application Status</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;WasApplicationReturned&quot;},{&quot;field&quot;:&quot;IsApplicationSubmitted&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;true&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>27.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetIndividualApplicationStatus</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;IndividualApplicationStatus&quot;:&quot;%IAStatusData:Status%&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>SetIndividualApplicationStatus</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;DoesPreliminaryApplicationReferenceExist&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetIsEditByCaseWorkerAllowed</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;IsEditByCaseWorkerAllowed&quot;:&quot;=EQUALS(%IndividualApplicationStatus%, \&quot;In Review\&quot;) &amp;&amp; EQUALS(%WasApplicationReturned%, false) &amp;&amp; NOTEQUALS(%UserType%, \&quot;PowerCustomerSuccess\&quot;)\n&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>SetIsEditByCaseWorkerAllowed</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;DoesPreliminaryApplicationReferenceExist&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetLoggedInUserName</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;HouseholdMemberName&quot;:&quot;%User|1:Name%&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Set logged in user name</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>14.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetReturnedApplicationSubmittedStatus</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;IsReturnedApplicationSubmitted&quot;:true}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Set Returned Application Submitted Status</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;WasApplicationReturned&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>26.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetReturnedApplicationValues</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;WasApplicationReturned&quot;:&quot;%ReturnedIndividualApplicationStatus:WasReturned%&quot;,&quot;IndividualApplicationId&quot;:&quot;%ReturnedIndividualApplicationStatus:Id%&quot;,&quot;IsReturnedApplicationSubmitted&quot;:false,&quot;IsApplicationEdited&quot;:false}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Set Returned Application Values</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;DoesPreliminaryApplicationReferenceExist&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetSessionValues</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;IsApplicationSubmitted&quot;:true}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Set Session Values</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>25.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetUserType</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;UserType&quot;:&quot;%User|1:UserType%&quot;}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>Set User Type</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;DoesPreliminaryApplicationReferenceExist&quot;}]}}</show>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <isActive>false</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SetValues1</omniScriptDefElementName>
+        <propertySetConfig>
+            <controlWidth>12</controlWidth>
+            <dynamicProperties>{}</dynamicProperties>
+            <elementValueMap>{&quot;COCChangeInHouseholdMember&quot;:true,&quot;COCChangeInIncome&quot;:true,&quot;COCReportAChangeIsEdited&quot;:false,&quot;HouseholdInformation&quot;:{&quot;PSS_BM_v5_Select_the_programs_that_you_ve_applied_for&quot;:&quot;Health Care/Medicaid;Housing Assistance&quot;,&quot;PSS_BM_v5_AreThereChildrenInTheHousehold&quot;:true,&quot;PSS_BM_v5_AreThereElderlyHouseholdMembers&quot;:false,&quot;PSS_BM_v5_HouseholdSize&quot;:2,&quot;PSS_BM_v5_HouseholdMemberDetails&quot;:null,&quot;PSS_BM_v5_Check_if_any_household_member_has_a_disability&quot;:&quot;No&quot;},&quot;PSS_BM_CurrentHouseholdMemberDetails&quot;:[{&quot;PSS_BM_v5_Relationship&quot;:&quot;Spouse&quot;,&quot;PSS_BM_v5_USCitizen&quot;:&quot;No&quot;,&quot;PSS_BM_v5_HouseholdMemberName&quot;:&quot;9a Demo Primary&quot;,&quot;PSS_BM_v5_Gender&quot;:&quot;F&quot;,&quot;PSS_BM_v5_HouseholdMemberLastName&quot;:&quot;Primary&quot;,&quot;PSS_BM_v5_IsDisabled&quot;:&quot;Yes&quot;,&quot;PSS_BM_v5_Age&quot;:23,&quot;PSS_BM_v5_DateOfBirth&quot;:&quot;2000-01-01&quot;,&quot;PSS_BM_v5_HouseholdMemberFirstName&quot;:&quot;9a Demo&quot;},{&quot;PSS_BM_v5_Relationship&quot;:&quot;Spouse&quot;,&quot;PSS_BM_v5_USCitizen&quot;:&quot;No&quot;,&quot;PSS_BM_v5_HouseholdMemberName&quot;:&quot;Wife Demo&quot;,&quot;PSS_BM_v5_Gender&quot;:&quot;F&quot;,&quot;PSS_BM_v5_HouseholdMemberLastName&quot;:&quot;Demo&quot;,&quot;PSS_BM_v5_IsDisabled&quot;:&quot;Yes&quot;,&quot;PSS_BM_v5_Age&quot;:23,&quot;PSS_BM_v5_DateOfBirth&quot;:&quot;2000-10-01&quot;,&quot;PSS_BM_v5_HouseholdMemberFirstName&quot;:&quot;Wife&quot;}],&quot;PSS_BM_v5_HouseholdMemberDetails&quot;:null,&quot;Income&quot;:{&quot;HouseholdIncomeRecordsCount&quot;:0,&quot;TotalHouseholdIncome&quot;:0,&quot;MaximumIncomeDetailsValidation&quot;:true,&quot;AreMultipleProofsOfIncomeSubmitted&quot;:false,&quot;PSS_BM_v5_ExistingHouseholdIncomeDetails&quot;:[{&quot;PSS_BM_v5_ExistingIncomeCurrentMonth&quot;:123,&quot;IncomeAdded&quot;:null,&quot;PSS_BM_UpdateIncomeChangeSelected&quot;:false,&quot;PSS_BM_RemoveIncomeChangeSelected&quot;:false,&quot;PSS_BM_v5_NewMember&quot;:false,&quot;PSS_BM_v5_StartDate&quot;:&quot;2023-09-01&quot;,&quot;PSS_BM_v5_IncomeFrequency&quot;:&quot;Monthly&quot;,&quot;PSS_BM_v5_Employer&quot;:&quot;oracle&quot;,&quot;PSS_BM_v5_IncomeCurrentMonth&quot;:123,&quot;PSS_BM_v5_IncomeHouseholdMemberName&quot;:&quot;Aman Gulati&quot;},{&quot;IncomeChange&quot;:null,&quot;IncomeAdded&quot;:&quot;Add income details&quot;,&quot;PSS_BM_UpdateIncomeChangeSelected&quot;:false,&quot;PSS_BM_RemoveIncomeChangeSelected&quot;:false,&quot;PSS_BM_v5_NewMember&quot;:true,&quot;MemberAdded&quot;:&quot;Yes&quot;,&quot;PSS_BM_v5_IncomeHouseholdMemberName&quot;:&quot;Sachin Tendulkar&quot;,&quot;PSS_BM_v5_IncomeCurrentMonth&quot;:10}],&quot;PSS_BM_v5_RemovedHouseholdIncomeDetails&quot;:{&quot;PSS_BM_v5_StartDateRemoved&quot;:&quot;09/01/2023&quot;,&quot;PSS_BM_v5_ExistingIncomeCurrentMonthRemoved&quot;:123,&quot;PSS_BM_v5_EmployerRemoved&quot;:&quot;oracle&quot;,&quot;PSS_BM_v5_IncomeFrequencyRemoved&quot;:&quot;Monthly&quot;,&quot;PSS_BM_v5_IncomeCurrentMonthRemoved&quot;:123,&quot;PSS_BM_v5_IncomeHouseholdMemberNameRemoved&quot;:&quot;Ashish Gulati&quot;}},&quot;omniscriptId&quot;:&quot;0jNxx000000006cEAA&quot;,&quot;language&quot;:&quot;English&quot;,&quot;type&quot;:&quot;ChangeOfCircumstances&quot;,&quot;runMode&quot;:&quot;preview&quot;,&quot;sId&quot;:&quot;0jNxx000000006cEAA&quot;,&quot;theme&quot;:&quot;lightning&quot;,&quot;subType&quot;:&quot;ReportChangeOfCircumstances&quot;,&quot;timeStamp&quot;:&quot;2023-10-10T05:23:29.916Z&quot;,&quot;userProfile&quot;:&quot;System Administrator&quot;,&quot;userTimeZoneName&quot;:&quot;America/Los_Angeles&quot;,&quot;userTimeZone&quot;:&quot;-420&quot;,&quot;userCurrencyCode&quot;:&quot;USD&quot;,&quot;userName&quot;:&quot;ashish.gulati@ba.com&quot;,&quot;userId&quot;:&quot;005xx000001X8PdAAK&quot;,&quot;omniProcessId&quot;:&quot;0jNxx000000006cEAA&quot;,&quot;localTimeZoneName&quot;:&quot;Asia/Calcutta&quot;,&quot;ChangeOfCircumstancesReportAChange&quot;:{&quot;COCChangeInHouseholdMember&quot;:true,&quot;COCChangeInIncome&quot;:true,&quot;COCReportAChangeIsEdited&quot;:false},&quot;IsReportChangeSelectionPageEdited&quot;:true,&quot;FinalListMerge&quot;:[{&quot;IsDisable&quot;:&quot;No&quot;,&quot;Birthdate&quot;:&quot;2020-01-01&quot;,&quot;LastName&quot;:&quot;Person Account&quot;,&quot;ContactId&quot;:&quot;003xx000004WhKeAAK&quot;,&quot;PersonGenderIdentity&quot;:&quot;F&quot;,&quot;Relationship&quot;:&quot;Spouse&quot;,&quot;PersonAge&quot;:3,&quot;FirstName&quot;:&quot;Demo&quot;,&quot;AccountId&quot;:&quot;001xx000003Ga8tAAC&quot;,&quot;HouseholdMemberName&quot;:&quot;Demo Person Account&quot;,&quot;PrimaryCitizenshipType&quot;:&quot;No&quot;}],&quot;MemberList&quot;:[{&quot;PSS_BM_v5_ShouldEnableEditing&quot;:false,&quot;PSS_BM_v5_HouseholdMemberName&quot;:&quot;Demo Person Account&quot;,&quot;PSS_BM_v5_Age&quot;:3,&quot;PSS_BM_v5_DateOfBirth&quot;:&quot;2020-01-01&quot;,&quot;LineBreak3&quot;:&quot;&quot;,&quot;LineBreak4&quot;:&quot;&quot;,&quot;PSS_BM_v5_Relationship&quot;:&quot;Spouse&quot;,&quot;PSS_BM_v5_USCitizen&quot;:&quot;No&quot;,&quot;PSS_BM_v5_Gender&quot;:&quot;F&quot;,&quot;PSS_BM_v5_HouseholdMemberLastName&quot;:&quot;Person Account&quot;,&quot;PSS_BM_v5_IsDisabled&quot;:&quot;No&quot;,&quot;PSS_BM_v5_HouseholdMemberFirstName&quot;:&quot;Demo&quot;,&quot;PSS_BM_v5_GradeCompleted&quot;:null,&quot;PSS_BM_v5_Race&quot;:null,&quot;PSS_BM_v5_Ethnicity&quot;:null,&quot;PSS_BM_v5_Edit_Member_Details&quot;:&quot;Remove this member&quot;},{&quot;PSS_BM_v5_ShouldEnableEditing&quot;:true,&quot;PSS_BM_v5_HouseholdMemberName&quot;:&quot;ashish gulati&quot;,&quot;PSS_BM_v5_Age&quot;:0,&quot;PSS_BM_v5_DateOfBirth&quot;:&quot;2023-10-02&quot;,&quot;LineBreak3&quot;:null,&quot;LineBreak4&quot;:null,&quot;PSS_BM_v5_Relationship&quot;:&quot;Son&quot;,&quot;PSS_BM_v5_USCitizen&quot;:&quot;Yes&quot;,&quot;PSS_BM_v5_Gender&quot;:&quot;M&quot;,&quot;PSS_BM_v5_HouseholdMemberLastName&quot;:&quot;gulati&quot;,&quot;PSS_BM_v5_IsDisabled&quot;:&quot;Yes&quot;,&quot;PSS_BM_v5_HouseholdMemberFirstName&quot;:&quot;ashish&quot;,&quot;PSS_BM_v5_GradeCompleted&quot;:&quot;12&quot;,&quot;PSS_BM_v5_Race&quot;:null,&quot;PSS_BM_v5_Ethnicity&quot;:null,&quot;PSS_BM_v5_Edit_Member_Details&quot;:&quot;Add a new member&quot;}],&quot;PSS_BM_v5_HouseholdIncomeDetails&quot;:{&quot;PSS_BM_v5_IncomeFrequency&quot;:&quot;Monthly&quot;,&quot;PSS_BM_v5_Employer&quot;:&quot;Oracle&quot;,&quot;PSS_BM_v5_IncomeCurrentMonth&quot;:198,&quot;PSS_BM_v5_ExistingIncomeCurrentMonth&quot;:198,&quot;PSS_BM_v5_StartDate&quot;:&quot;09/01/2023&quot;,&quot;PSS_BM_v5_IncomeHouseholdMemberName&quot;:&quot;Demo Person Account&quot;}}</elementValueMap>
+            <htmlTemplateId></htmlTemplateId>
+            <label>SetValues1</label>
+            <message>{}</message>
+            <pubsub>false</pubsub>
+            <showPersistentComponent>[true,false]</showPersistentComponent>
+            <ssm>false</ssm>
+            <wpm>false</wpm>
+        </propertySetConfig>
+        <sequenceNumber>19.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <embeddedOmniscriptKey>ChangeOfCircumstances|SignatureCapture|English</embeddedOmniscriptKey>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>SignatureCapture</omniScriptDefElementName>
+        <propertySetConfig>
+            <dynamicProperties>{&quot;Type&quot;:&quot;ChangeOfCircumstances&quot;,&quot;Sub Type&quot;:&quot;SignatureCapture&quot;,&quot;Language&quot;:&quot;English&quot;}</dynamicProperties>
+        </propertySetConfig>
+        <sequenceNumber>21.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <embeddedOmniscriptKey>ChangeOfCircumstances|UpdateHouseHoldMemberDetails|English</embeddedOmniscriptKey>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>UpdateHouseHoldMemberDetails</omniScriptDefElementName>
+        <propertySetConfig>
+            <dynamicProperties>{&quot;Type&quot;:&quot;ChangeOfCircumstances&quot;,&quot;Sub Type&quot;:&quot;UpdateHouseHoldMemberDetails&quot;,&quot;Language&quot;:&quot;English&quot;}</dynamicProperties>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;ChangeOfCircumstancesReportAChange:PSS_BM_v5_ChangeOfCircumstancesReportChangeMember&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>12.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniscriptDefinitionElement>
+    <omniscriptDefinitionElement>
+        <embeddedOmniscriptKey>ChangeOfCircumstances|UpdateMemberIncome|English</embeddedOmniscriptKey>
+        <isActive>true</isActive>
+        <isOmniscriptReusable>false</isOmniscriptReusable>
+        <level>0.0</level>
+        <omniScriptDefElementName>UpdateMemberIncome</omniScriptDefElementName>
+        <propertySetConfig>
+            <dynamicProperties>{&quot;Type&quot;:&quot;ChangeOfCircumstances&quot;,&quot;Sub Type&quot;:&quot;UpdateMemberIncome&quot;,&quot;Language&quot;:&quot;English&quot;}</dynamicProperties>
+            <show>{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;true&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;ChangeOfCircumstancesReportAChange:PSS_BM_v5_ChangeOfCircumstancesReportChangeIncome&quot;}]}}</show>
+        </propertySetConfig>
+        <sequenceNumber>17.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniscriptDefinitionElement>
+    <omniscriptLanguage>English</omniscriptLanguage>
+    <omniscriptName>ChangeOfCircumstancesReportChangeOfCircumstances</omniscriptName>
+    <propertySetConfig>
+        <allowCancel>true</allowCancel>
+        <allowSaveForLater>true</allowSaveForLater>
+        <autoFocus>false</autoFocus>
+        <autoSaveOnStepNext>true</autoSaveOnStepNext>
+        <bulk>false</bulk>
+        <cancelRedirectPageName>OmniScriptCancelled</cancelRedirectPageName>
+        <cancelRedirectTemplateUrl>vlcCancelled.html</cancelRedirectTemplateUrl>
+        <cancelSource>%ContextId%</cancelSource>
+        <cancelType>SObject</cancelType>
+        <consoleTabIcon>custom:custom18</consoleTabIcon>
+        <consoleTabLabel>New</consoleTabLabel>
+        <currencyCode></currencyCode>
+        <currentLanguage>en_US</currentLanguage>
+        <disableUnloadWarn>true</disableUnloadWarn>
+        <dynamicProperties>{}</dynamicProperties>
+        <elementTypeToHTMLTemplateMapping>{}</elementTypeToHTMLTemplateMapping>
+        <enableKnowledge>false</enableKnowledge>
+        <errorMessage>{&quot;custom&quot;:[]}</errorMessage>
+        <hideStepChart>false</hideStepChart>
+        <knowledgeArticleTypeQueryFieldsMap>{}</knowledgeArticleTypeQueryFieldsMap>
+        <mergeSavedData>true</mergeSavedData>
+        <message>{}</message>
+        <persistentComponent>[{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalSize&quot;:&quot;lg&quot;}},{&quot;render&quot;:false,&quot;dispOutsideOmni&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalController&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;}}]</persistentComponent>
+        <pubsub>false</pubsub>
+        <rtpSeed>false</rtpSeed>
+        <saveContentEncoded>false</saveContentEncoded>
+        <saveExpireInDays>-1</saveExpireInDays>
+        <saveForLaterRedirectPageName>sflRedirect</saveForLaterRedirectPageName>
+        <saveForLaterRedirectTemplateUrl>vlcSaveForLaterAcknowledge.html</saveForLaterRedirectTemplateUrl>
+        <saveNameTemplate>%userId%-%timeStamp%</saveNameTemplate>
+        <saveObjectId>%userId%</saveObjectId>
+        <saveURLPatterns>{}</saveURLPatterns>
+        <scrollBehavior>auto</scrollBehavior>
+        <seedDataJSON>{}</seedDataJSON>
+        <showInputWidth>false</showInputWidth>
+        <ssm>false</ssm>
+        <stepChartPlacement>right</stepChartPlacement>
+        <stylesheet>{&quot;newport&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;}</stylesheet>
+        <timeTracking>false</timeTracking>
+        <trackingCustomData>{}</trackingCustomData>
+        <visualforcePagesAvailableInPreview>{}</visualforcePagesAvailableInPreview>
+        <wpm>false</wpm>
+    </propertySetConfig>
+    <references>[{&quot;name&quot;:&quot;ChangeOfCircumstances_ApplicationSubmissionConfirmation_English&quot;,&quot;type&quot;:&quot;OmniscriptDefinition&quot;},{&quot;name&quot;:&quot;ChangeOfCircumstances_ModifyReturnedIndividualApplication_Procedure&quot;,&quot;type&quot;:&quot;IntegrationProcdDefinition&quot;},{&quot;name&quot;:&quot;PSSReportChangeCreatePARFromAssessment1&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;PSSCheckUserType3&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;PSSFetchReturnedToApplicantStatus3&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;ChangeOfCircumstances_UpdateMemberIncome_English&quot;,&quot;type&quot;:&quot;OmniscriptDefinition&quot;},{&quot;name&quot;:&quot;PSSExpCloudGetPersonAccountIDOfApplicant1&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;},{&quot;name&quot;:&quot;ChangeOfCircumstances_UpdateHouseHoldMemberDetails_English&quot;,&quot;type&quot;:&quot;OmniscriptDefinition&quot;},{&quot;name&quot;:&quot;ChangeOfCircumstances_CreateIndividualApplicationAndRelatedRecords_Procedure&quot;,&quot;type&quot;:&quot;IntegrationProcdDefinition&quot;},{&quot;name&quot;:&quot;ChangeOfCircumstances_SignatureCapture_English&quot;,&quot;type&quot;:&quot;OmniscriptDefinition&quot;},{&quot;name&quot;:&quot;ChangeOfCircumstances_ReportChangeType_English&quot;,&quot;type&quot;:&quot;OmniscriptDefinition&quot;},{&quot;name&quot;:&quot;ChangeOfCircumstances_GetHouseHoldMemberDetailsByHeadOfHouseholdId_Procedure&quot;,&quot;type&quot;:&quot;IntegrationProcdDefinition&quot;},{&quot;name&quot;:&quot;PSSFetchIndividualApplicationStatus1&quot;,&quot;type&quot;:&quot;DataMapperDefinition&quot;}]</references>
+    <subType>ReportChangeOfCircumstances</subType>
+    <type>ChangeOfCircumstances</type>
+</OmniscriptDefinition>
