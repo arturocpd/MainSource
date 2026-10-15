@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexcardDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorName>Arturo</authorName>
+    <dataSourceConfiguration>{&quot;dataSource&quot;:{&quot;type&quot;:null,&quot;value&quot;:{},&quot;orderBy&quot;:{},&quot;contextVariables&quot;:[]}}</dataSourceConfiguration>
+    <description>Arturo has created this FlexCard for Nutrition</description>
+    <flexcardKey>NutritionSport/Arturo</flexcardKey>
+    <flexcardType>Parent</flexcardType>
+    <isActive>true</isActive>
+    <isManagedUsingStdDesigner>true</isManagedUsingStdDesigner>
+    <isTrackingEnabled>false</isTrackingEnabled>
+    <masterLabel>NutritionSport_Arturo</masterLabel>
+    <propertySetConfig>
+        <accessibilityToggle>true</accessibilityToggle>
+        <dataSource>{&quot;type&quot;:null,&quot;value&quot;:{},&quot;orderBy&quot;:{},&quot;contextVariables&quot;:[]}</dataSource>
+        <dynamicProperties>{&quot;offlineEnabled&quot;:false,&quot;xmlJson&quot;:[{&quot;@attributes&quot;:{&quot;targets&quot;:&quot;lightning__AppPage&quot;},&quot;property&quot;:[{&quot;@attributes&quot;:{&quot;name&quot;:&quot;debug&quot;,&quot;type&quot;:&quot;Boolean&quot;}},{&quot;@attributes&quot;:{&quot;name&quot;:&quot;recordId&quot;,&quot;type&quot;:&quot;String&quot;}}]},{&quot;@attributes&quot;:{&quot;targets&quot;:&quot;lightning__RecordPage&quot;},&quot;property&quot;:[{&quot;@attributes&quot;:{&quot;name&quot;:&quot;debug&quot;,&quot;type&quot;:&quot;Boolean&quot;}}]}]}</dynamicProperties>
+        <enableLwc>true</enableLwc>
+        <isFlex>true</isFlex>
+        <selectableMode>Multi</selectableMode>
+        <states>
+            <conditions>{&quot;id&quot;:&quot;state-condition-object&quot;,&quot;isParent&quot;:true,&quot;group&quot;:[]}</conditions>
+            <definedActions>{&quot;actions&quot;:[]}</definedActions>
+            <dynamicProperties>{}</dynamicProperties>
+            <fields>[]</fields>
+            <isSmartAction>false</isSmartAction>
+            <name>Active</name>
+            <smartAction>{}</smartAction>
+            <styleObject>{&quot;padding&quot;:[{&quot;type&quot;:&quot;around&quot;,&quot;size&quot;:&quot;x-small&quot;}],&quot;margin&quot;:[{&quot;type&quot;:&quot;bottom&quot;,&quot;size&quot;:&quot;x-small&quot;}],&quot;container&quot;:{&quot;class&quot;:&quot;slds-card&quot;},&quot;size&quot;:{&quot;isResponsive&quot;:false,&quot;default&quot;:&quot;12&quot;},&quot;sizeClass&quot;:&quot;slds-size_12-of-12&quot;,&quot;class&quot;:&quot;slds-card slds-p-around_x-small slds-m-bottom_x-small&quot;}</styleObject>
+        </states>
+        <theme>slds</theme>
+        <title>NutritionSport</title>
+        <xmlObject>{&quot;targetConfigs&quot;:&quot;PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX0FwcFBhZ2UiPgogICAgICAgICAgICAgICAgICAgIDxwcm9wZXJ0eSBuYW1lPSJkZWJ1ZyIgdHlwZT0iQm9vbGVhbiIvPgogICAgICAgICAgICAgICAgICAgIDxwcm9wZXJ0eSBuYW1lPSJyZWNvcmRJZCIgdHlwZT0iU3RyaW5nIi8+CiAgICAgICAgICAgICAgICA8L3RhcmdldENvbmZpZz4KICAgICAgICAgICAgICAgIDx0YXJnZXRDb25maWcgdGFyZ2V0cz0ibGlnaHRuaW5nX19SZWNvcmRQYWdlIj4KICAgICAgICAgICAgICAgICAgICA8cHJvcGVydHkgbmFtZT0iZGVidWciIHR5cGU9IkJvb2xlYW4iLz4KICAgICAgICAgICAgICAgIDwvdGFyZ2V0Q29uZmlnPg==&quot;,&quot;targets&quot;:{&quot;target&quot;:[&quot;lightning__RecordPage&quot;,&quot;lightning__AppPage&quot;,&quot;lightning__HomePage&quot;]},&quot;apiVersion&quot;:61,&quot;description&quot;:&quot;&quot;,&quot;masterLabel&quot;:&quot;NutritionSport&quot;}</xmlObject>
+    </propertySetConfig>
+    <references>[]</references>
+</FlexcardDefinition>
