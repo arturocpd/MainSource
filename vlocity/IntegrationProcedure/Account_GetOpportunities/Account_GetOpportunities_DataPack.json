@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "USD",
+    "CustomJavaScript": "Account_GetOpportunities_SampleInput.json",
+    "Description": "Gets all opportunities associated with an AccountId",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsLocked": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "MayEdit": true,
+    "Name": "GET Opportunity from Account with AccountId",
+    "OmniProcessElement": [
+        "Account_GetOpportunities_Element_DR_GetOpportunities.json",
+        "Account_GetOpportunities_Element_Response.json"
+    ],
+    "OmniProcessKey": "Account_GetOpportunities",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Account_GetOpportunities_PropertySetConfig.json",
+    "SubType": "GetOpportunities",
+    "Type": "Account",
+    "UniqueName": "Account_GetOpportunities_Procedure_2",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Account/GetOpportunities/Procedure"
+}
