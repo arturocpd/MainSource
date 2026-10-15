@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IntegrationProcdDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Gets all opportunities associated with an AccountId</description>
+    <integProcdName>GET Opportunity from Account with AccountId</integProcdName>
+    <integrationProcdDefElmnt>
+        <integProcdDefElmntName>DR_GetOpportunities</integProcdDefElmntName>
+        <isActive>true</isActive>
+        <level>0.0</level>
+        <propertySetConfig>
+            <actionMessage></actionMessage>
+            <additionalInput>{}</additionalInput>
+            <additionalOutput>{}</additionalOutput>
+            <bundle>GET Opportunity from AccountId</bundle>
+            <chainOnStep>false</chainOnStep>
+            <dataRaptorInputParameters>[{&quot;element&quot;:&quot;AccountId&quot;,&quot;inputParam&quot;:&quot;AccountId&quot;}]</dataRaptorInputParameters>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;label&quot;:&quot;DataRaptorExtractAction1&quot;,&quot;show&quot;:null}</dynamicProperties>
+            <executionConditionalFormula></executionConditionalFormula>
+            <failOnStepError>true</failOnStepError>
+            <failureConditionalFormula></failureConditionalFormula>
+            <failureResponse>{}</failureResponse>
+            <ignoreCache>false</ignoreCache>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <returnOnlyAdditionalOutput>false</returnOnlyAdditionalOutput>
+            <returnOnlyFailureResponse>false</returnOnlyFailureResponse>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath></sendJSONPath>
+            <sendOnlyAdditionalInput>false</sendOnlyAdditionalInput>
+            <useFormulas>true</useFormulas>
+        </propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </integrationProcdDefElmnt>
+    <integrationProcdDefElmnt>
+        <integProcdDefElmntName>Response</integProcdDefElmntName>
+        <isActive>true</isActive>
+        <level>0.0</level>
+        <propertySetConfig>
+            <additionalOutput>{}</additionalOutput>
+            <disOnTplt>false</disOnTplt>
+            <dynamicProperties>{&quot;label&quot;:&quot;ResponseAction1&quot;,&quot;responseDefaultData&quot;:{},&quot;show&quot;:null}</dynamicProperties>
+            <executionConditionalFormula></executionConditionalFormula>
+            <responseFormat>JSON</responseFormat>
+            <responseJSONNode></responseJSONNode>
+            <responseJSONPath></responseJSONPath>
+            <returnFullDataJSON>false</returnFullDataJSON>
+            <returnOnlyAdditionalOutput>false</returnOnlyAdditionalOutput>
+            <sendJSONNode></sendJSONNode>
+            <sendJSONPath>DR_GetOpportunities</sendJSONPath>
+            <useFormulas>true</useFormulas>
+            <vlcResponseHeaders>{}</vlcResponseHeaders>
+        </propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </integrationProcdDefElmnt>
+    <integrationProcedureDefKey>Account_GetOpportunities</integrationProcedureDefKey>
+    <integrationProcedureType>Integration Procedure</integrationProcedureType>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <masterLabel>Account_GetOpportunities_Procedure</masterLabel>
+    <propertySetConfig>
+        <additionalChainableResponse>{}</additionalChainableResponse>
+        <chainableCpuLimit>2000</chainableCpuLimit>
+        <chainableQueriesLimit>50</chainableQueriesLimit>
+        <columnsPropertyMap>[]</columnsPropertyMap>
+        <description></description>
+        <dynamicProperties>{}</dynamicProperties>
+        <includeAllActionsInResponse>false</includeAllActionsInResponse>
+        <labelPlural></labelPlural>
+        <labelSingular></labelSingular>
+        <linkToExternalObject></linkToExternalObject>
+        <mockResponseMap>{}</mockResponseMap>
+        <nameColumn></nameColumn>
+        <queueableChainableCpuLimit>40000</queueableChainableCpuLimit>
+        <queueableChainableHeapSizeLimit>6</queueableChainableHeapSizeLimit>
+        <queueableChainableQueriesLimit>120</queueableChainableQueriesLimit>
+        <relationshipFieldsMap>[]</relationshipFieldsMap>
+        <rollbackOnError>false</rollbackOnError>
+        <trackingCustomData>{}</trackingCustomData>
+        <ttlMinutes>5</ttlMinutes>
+    </propertySetConfig>
+    <references>[]</references>
+    <subType>GetOpportunities</subType>
+    <type>Account</type>
+</IntegrationProcdDefinition>
