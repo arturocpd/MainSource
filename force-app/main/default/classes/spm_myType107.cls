@@ -1,5 +1,5 @@
-public with sharing class spm_myType101 {
-    
+public with sharing class spm_myType107 {
+
     Public static Account setDefaultDescription(Account a){
         If (a.Description != null) return a;
         Else {
@@ -8,17 +8,17 @@ public with sharing class spm_myType101 {
         }
     }
 
-          /**Changes in Source Dev1**/
-          /**2nd round of changes in Source Dev1**/
+    /**3nd round of changes in Source Dev1 with Cline**/
+    /**Rebase test**/
 
     public static Account setDefaultBillingAddress(Account a){
-        a.billingstreet = 'Basauri, 6'; 
-        a.billingstate = 'Madrid'; 
-        a.billingpostalcode ='28023'; 
+        a.billingstreet = 'Basauri, 6';
+        a.billingstate = 'Madrid';
+        a.billingpostalcode ='28023';
         return a;
     }
     public static Account setDefaultShippingAddress(Account a){
-        a.shippingstreet = 'Basauri, 6'; 
+        a.shippingstreet = 'Basauri, 6';
         a.shippingstate = 'Madrid';
         a.shippingpostalcode ='28023';
         return a;
@@ -31,7 +31,7 @@ public with sharing class spm_myType101 {
     /**___CONFLICT_2___**/
 
     public static Account setDefaultURL(Account a) {
-        a.website = 'www.copado.com'; 
+        a.website = 'www.copado.com';
         return a;
     }
 }
