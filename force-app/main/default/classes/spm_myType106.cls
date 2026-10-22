@@ -8,7 +8,7 @@ public with sharing class spm_myType106 {
         }
     }
 
-    /**Change in UAT**/
+    /**Change in feature**/
     /**Rebase test**/
 
     public static Account setDefaultBillingAddress(Account a){
