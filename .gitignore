@@ -47,3 +47,5 @@ $RECYCLE.BIN/
 .copado
 .agentia/config.user.json
 .agentia/idex
+.agents
+.claude
