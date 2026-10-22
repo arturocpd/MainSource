@@ -8,7 +8,7 @@ public with sharing class spm_myType100 {
         }
     }
 
-    /**___CONFLICT_1___ - Dev 1 change**/
+    /**I am working on this class in the IDE**/
     /**Rollback test test**/
 
     public static Account setDefaultBillingAddress(Account a){
