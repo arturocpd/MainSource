@@ -8,8 +8,8 @@ public with sharing class spm_myType102 {
         }
     }
 
-    /**Sync error test change**/
-     /**3nd round of changes in Source Dev1 with Cline**/
+    /** This is a change in the IDE **/
+    /** I am adding one more line from the IDE **/
 
     public static Account setDefaultBillingAddress(Account a){
         a.billingstreet = 'Basauri, 6'; 
