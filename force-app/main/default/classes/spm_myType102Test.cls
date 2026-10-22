@@ -11,7 +11,7 @@ public with sharing class spm_myType102Test {
         acc = spm_myType102.setDefaultDescription(acc);
         System.assertNotEquals('Default description', acc.Description, 'When description is NOT null, it is NOT updated to Default description');
     }
-
+//** comment to add the test class to the story */
     @isTest static void testDefaultBillingAddress(){
         Account acc = new Account(Name = 'My Test Account');
         insert acc;

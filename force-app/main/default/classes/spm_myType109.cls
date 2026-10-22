@@ -8,7 +8,7 @@ public with sharing class spm_myType109 {
         }
     }
 
-    /**Changes in arpidev1 branch**/
+    /**Changes in feature branch**/
     /**Rebase test**/
 
     public static Account setDefaultBillingAddress(Account a){
