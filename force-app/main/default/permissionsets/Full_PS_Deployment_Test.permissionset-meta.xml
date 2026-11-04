@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>Full PS Deployment Test</label>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.PS_FLS_Deploy_1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.PS_FLS_Deploy_2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
+    <label>Full PS Deployment Test</label>
 </PermissionSet>
