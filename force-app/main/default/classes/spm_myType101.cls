@@ -1,4 +1,4 @@
-public with sharing class spm_myType103 {
+public with sharing class spm_myType101 {
     
     Public static Account setDefaultDescription(Account a){
         If (a.Description != null) return a;
@@ -8,8 +8,7 @@ public with sharing class spm_myType103 {
         }
     }
 
-    /**Conflict test change in SourceDev1**/
-     /**3nd round of changes in Source Dev1 with Cline**/
+    /** I am changing this in Dev2 to create a conflict in Env Sync **/
 
     public static Account setDefaultBillingAddress(Account a){
         a.billingstreet = 'Basauri, 6'; 
