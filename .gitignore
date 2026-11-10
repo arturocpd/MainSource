@@ -45,3 +45,12 @@ $RECYCLE.BIN/
 **/venv/
 
 .copado
+.agentia/config.user.json
+.agentia/idex
+.agentia/config.json
+.agentia_quality_gates.cmd
+.agentia_quality_gates.sh
+.agents/
+.claude/
+AGENTS.md
+skills-lock.json
