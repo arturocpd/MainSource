@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IntegrationProcdDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is a Neutron Integration procedure</description>
+    <integProcdName>Neutron</integProcdName>
+    <integrationProcedureDefKey>Atom_Charge</integrationProcedureDefKey>
+    <integrationProcedureType>Integration Procedure</integrationProcedureType>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isManagedUsingStdDesigner>true</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <masterLabel>Atom_Charge_English</masterLabel>
+    <propertySetConfig>
+        <additionalChainableResponse>{}</additionalChainableResponse>
+        <chainableCpuLimit>2000</chainableCpuLimit>
+        <chainableQueriesLimit>50</chainableQueriesLimit>
+        <columnsPropertyMap>[]</columnsPropertyMap>
+        <description></description>
+        <dynamicProperties>{}</dynamicProperties>
+        <includeAllActionsInResponse>false</includeAllActionsInResponse>
+        <labelPlural></labelPlural>
+        <labelSingular></labelSingular>
+        <linkToExternalObject></linkToExternalObject>
+        <nameColumn></nameColumn>
+        <relationshipFieldsMap>[]</relationshipFieldsMap>
+        <rollbackOnError>false</rollbackOnError>
+        <trackingCustomData>{}</trackingCustomData>
+        <transientValues>{&quot;activateOrDeactivateConsent&quot;:false}</transientValues>
+    </propertySetConfig>
+    <references>[]</references>
+    <subType>Charge</subType>
+    <type>Atom</type>
+</IntegrationProcdDefinition>
